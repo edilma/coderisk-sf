@@ -1,0 +1,16 @@
+# env & secrets
+.env
+*.env
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# data
+data/raw/
+data/interim/
+data/processed/*.parquet
+data/processed/*.csv
+# notebooks caches
+*.DS_Store
+# ignore virtual environment
+.venv/
