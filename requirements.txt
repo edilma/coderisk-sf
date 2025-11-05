@@ -1,0 +1,8 @@
+streamlit
+python-dotenv==1.0.1
+pandas
+pyarrow
+requests
+boto3
+landingai-ade 
+scikit-learn
