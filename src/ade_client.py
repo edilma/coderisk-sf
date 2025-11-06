@@ -1,31 +1,63 @@
-#for sdk wrapper and table extraction
+# src/ade_client.py
 from __future__ import annotations
 from pathlib import Path
-from typing import Iterable, List
+from typing import Iterable, List, Tuple
 import io
+import json
 import pandas as pd
+
 from landingai_ade import LandingAIADE
-from .config import ADE_API_KEY, ADE_MODEL, INTERIM_DIR
+from .config import ADE_API_KEY, ADE_MODEL, INTERIM_DIR, RAW_JSON_DIR
 
 try:
     import markdown as mdlib
 except Exception:
     mdlib = None
 
+# ---------- Utilities ----------
+
+def save_json(data: dict, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def response_to_dict(resp) -> dict:
+    """
+    The SDK returns an object with attributes (markdown, chunks, splits, metadata, grounding).
+    Convert to a plain dict so we can serialize reliably.
+    """
+    if isinstance(resp, dict):
+        return resp
+    out = {}
+    for k in ("markdown", "chunks", "splits", "metadata", "grounding"):
+        v = getattr(resp, k, None)
+        if v is not None:
+            out[k] = v
+    return out
+
 def _client() -> LandingAIADE:
     if not ADE_API_KEY:
-        raise RuntimeError("VISION_AGENT_API_KEY not set in .env")
+        raise RuntimeError("VISION_AGENT_API_KEY (or ADE_API_KEY) not set in .env")
     return LandingAIADE(apikey=ADE_API_KEY)
 
-def parse_pdf(pdf_path: Path) -> dict:
-    resp = _client().parse(document=pdf_path, model=ADE_MODEL)
-    return {"markdown": getattr(resp, "markdown", None),
-            "chunks":   getattr(resp, "chunks", None),
-            "source":   pdf_path.name}
+# ---------- ADE parse and table extraction ----------
+
+def parse_pdf(pdf_path: Path, city: str | None = None, save_raw: bool = True) -> dict:
+    """
+    Call ADE /parse, return a plain dict and optionally save the full JSON response.
+    """
+    resp_obj = _client().parse(document=pdf_path, model=ADE_MODEL)
+    resp = response_to_dict(resp_obj)
+    resp["source"] = pdf_path.name
+
+    if save_raw and city:
+        out_json = RAW_JSON_DIR / city / f"{pdf_path.stem}.json"
+        save_json(resp, out_json)
+    return resp
 
 def _tables_from_markdown(md_text: str) -> List[pd.DataFrame]:
     if not md_text:
         return []
+    # Convert markdown to HTML so pandas can read tables
     html = mdlib.markdown(md_text) if mdlib else md_text
     try:
         return [t for t in pd.read_html(io.StringIO(html)) if not t.empty]
@@ -34,59 +66,98 @@ def _tables_from_markdown(md_text: str) -> List[pd.DataFrame]:
 
 def _tables_from_chunks(chunks: list) -> List[pd.DataFrame]:
     out: List[pd.DataFrame] = []
-    if not chunks: 
+    if not chunks:
         return out
     for ch in chunks:
         if isinstance(ch, dict) and ch.get("type") == "table":
-            out += _tables_from_markdown(ch.get("markdown",""))
+            out += _tables_from_markdown(ch.get("markdown", ""))
     return out
 
 def extract_cases_df(parsed: dict) -> pd.DataFrame:
+    """
+    Take the ADE dict (with 'chunks' and optional 'markdown') and build a single DataFrame
+    from all tables we can find. Then do a light column harmonization.
+    """
     frames: List[pd.DataFrame] = []
     frames += _tables_from_chunks(parsed.get("chunks"))
     if not frames and parsed.get("markdown"):
         frames += _tables_from_markdown(parsed["markdown"])
     if not frames:
         return pd.DataFrame()
+
     raw = pd.concat(frames, ignore_index=True)
     raw.columns = [str(c).strip() for c in raw.columns]
 
+    # Column harmonization (keep raw address names; map to a common set)
     wanted = {
-        "Case Type":"Case Type","Case Number":"Case Number","Case #":"Case Number",
-        "Case Status":"Case Status","Code Status":"Case Status",
-        "Main Address":"Main Address","Address":"Main Address",
-        "Project":"Project","District":"District","Parcel":"Parcel",
-        "Assigned To":"Assigned To","Opened Date":"Opened Date","Open Date":"Opened Date",
-        "Closed Date":"Closed Date","Closed":"Closed Date",
+        "Case Type": "Case Type",
+        "Case Number": "Case Number",
+        "Case #": "Case Number",
+        "Case Status": "Case Status",
+        "Code Status": "Case Status",
+        "Main Address": "Main Address",
+        "Address": "Main Address",
+        "Project": "Project",
+        "District": "District",
+        "Parcel": "Parcel",
+        "Assigned To": "Assigned To",
+        "Opened Date": "Opened Date",
+        "Open Date": "Opened Date",
+        "Closed Date": "Closed Date",
+        "Closed": "Closed Date",
+        # You can extend this with Violation / Violation Status / Citation / Compliance / Resolved if present
+        "Violation": "Violation",
+        "Violation Status": "Violation Status",
+        "Citation Issued": "Citation Issued",
+        "Compliance Date": "Compliance Date",
+        "Resolved Date": "Resolved Date",
+        "Violation Fee Total": "Violation Fee Total",
+        "Description": "Description",
     }
-    cols = {c: next((v for k,v in wanted.items() if k.lower()==c.lower()), None) for c in raw.columns}
-    cols = {k:v for k,v in cols.items() if v}
+    cols = {c: next((v for k, v in wanted.items() if k.lower() == c.lower()), None) for c in raw.columns}
+    cols = {k: v for k, v in cols.items() if v}
     df = raw.rename(columns=cols)
     keep = list(dict.fromkeys(wanted.values()))
     df = df[[c for c in keep if c in df.columns]].copy()
-    # drop header-like rows
-    if "Case Type" in df:
+
+    # remove header-like rows
+    if "Case Type" in df.columns:
         df = df[~df["Case Type"].astype(str).str.contains("Case Type", case=False, na=False)]
-    for d in ("Opened Date","Closed Date"):
-        if d in df: df[d] = pd.to_datetime(df[d], errors="coerce")
+
+    # basic date coercion (won't fail if missing)
+    for d in ("Opened Date", "Closed Date", "Compliance Date", "Resolved Date", "Citation Issued"):
+        if d in df.columns:
+            df[d] = pd.to_datetime(df[d], errors="coerce")
+
     if parsed.get("source"):
         df["source_file"] = parsed["source"]
     return df.reset_index(drop=True)
 
-def parse_batch_to_csv(pdf_paths: Iterable[Path], out_name="ade_latest.csv") -> pd.DataFrame:
+# ---------- Batch runners ----------
+
+def parse_batch_to_csv_city(items: Iterable[Tuple[str, Path]], out_name: str = "ade_latest.csv") -> pd.DataFrame:
+    """
+    items: iterable of (city, pdf_path)
+    Saves raw JSON per file and accumulates a CSV of all extracted tables.
+    """
     INTERIM_DIR.mkdir(parents=True, exist_ok=True)
-    frames = []
-    for p in pdf_paths:
+    frames: List[pd.DataFrame] = []
+
+    for city, p in items:
         try:
-            r  = parse_pdf(p)
-            df = extract_cases_df(r)
+            parsed = parse_pdf(p, city=city, save_raw=True)
+            df = extract_cases_df(parsed)
             if not df.empty:
+                df["city"] = city
                 df["source_file"] = p.name
                 frames.append(df)
         except Exception as e:
-            print(f"[WARN] {p.name}: {e}")
+            print(f"[WARN] {city} :: {p.name}: {e}")
+
     if not frames:
         return pd.DataFrame()
+
     out = pd.concat(frames, ignore_index=True)
-    (INTERIM_DIR / out_name).write_text(out.to_csv(index=False), encoding="utf-8")
+    csv_path = INTERIM_DIR / out_name
+    csv_path.write_text(out.to_csv(index=False), encoding="utf-8")
     return out
