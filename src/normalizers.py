@@ -45,7 +45,7 @@ def normalize_pompano(df: pd.DataFrame, city: str) -> pd.DataFrame:
     rename_map = {
         "Formatted Case Number": "case_id_raw",
         "Address": "address_raw",
-        "Violation Code": "violation_code",
+        "Violation Code": "violation",
         "Violation Description": "violation",
         "Case Disposition": "disposition",
         "Case Status Description": "case_status",

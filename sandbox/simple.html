@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boca Descriptions - Simple Version</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .description { max-width: 500px; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h1>Boca Raton Code Violation Descriptions</h1>
+    <p><strong>Status:</strong> <span id="status">Loading...</span></p>
+    
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Row ID</th>
+                <th>Description</th>
+                <th>Source File</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr><td colspan="3">Loading data...</td></tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Load data from JSON file
+        fetch('boca_descriptions.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('status').textContent = `Loaded ${data.length} descriptions successfully!`;
+                
+                const tbody = document.getElementById('tableBody');
+                tbody.innerHTML = '';
+                
+                data.forEach(item => {
+                    const row = tbody.insertRow();
+                    row.insertCell(0).textContent = item.row_id;
+                    row.insertCell(1).innerHTML = `<div class="description">${item.description}</div>`;
+                    row.insertCell(2).textContent = item.source_file;
+                });
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                document.getElementById('status').textContent = 'Error loading data: ' + error.message;
+                document.getElementById('tableBody').innerHTML = '<tr><td colspan="3">Failed to load data. Check console for details.</td></tr>';
+            });
+    </script>
+</body>
+</html>
