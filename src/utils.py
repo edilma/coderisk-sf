@@ -41,3 +41,42 @@ def raw_row_hash(row: pd.Series) -> str:
     }
     j = json.dumps(subset, sort_keys=True, default=str)
     return hashlib.md5(j.encode("utf-8")).hexdigest()
+
+# -------------------------------------------------------------------
+# Make ADE SDK objects JSON-serializable (Chunks, Splits, Metadata)
+# -------------------------------------------------------------------
+from typing import Any
+
+def to_jsonable(x: Any):
+    """
+    Recursively convert ADE SDK objects (Chunk, Split, Metadata, etc.)
+    into plain Python types so they can be safely json.dump'ed.
+    """
+    # Primitive types
+    if x is None or isinstance(x, (str, int, float, bool)):
+        return x
+
+    # Dict → dict
+    if isinstance(x, dict):
+        return {k: to_jsonable(v) for k, v in x.items()}
+
+    # Lists / tuples / sets → list
+    if isinstance(x, (list, tuple, set)):
+        return [to_jsonable(v) for v in x]
+
+    # Pydantic v2 models (ADE uses them)
+    if hasattr(x, "model_dump"):      # LandingAI objects use this
+        try:
+            return to_jsonable(x.model_dump())
+        except Exception:
+            pass
+
+    # Generic object → try __dict__
+    if hasattr(x, "__dict__"):
+        try:
+            return to_jsonable(vars(x))
+        except Exception:
+            pass
+
+    # Last fallback → string
+    return str(x)

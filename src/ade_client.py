@@ -8,6 +8,7 @@ import pandas as pd
 
 from landingai_ade import LandingAIADE
 from .config import ADE_API_KEY, ADE_MODEL, INTERIM_DIR, RAW_JSON_DIR
+from .utils import to_jsonable  # <-- relative import
 
 try:
     import markdown as mdlib
@@ -41,18 +42,16 @@ def _client() -> LandingAIADE:
 
 # ---------- ADE parse and table extraction ----------
 
-def parse_pdf(pdf_path: Path, city: str | None = None, save_raw: bool = True) -> dict:
-    """
-    Call ADE /parse, return a plain dict and optionally save the full JSON response.
-    """
-    resp_obj = _client().parse(document=pdf_path, model=ADE_MODEL)
-    resp = response_to_dict(resp_obj)
-    resp["source"] = pdf_path.name
-
-    if save_raw and city:
-        out_json = RAW_JSON_DIR / city / f"{pdf_path.stem}.json"
-        save_json(resp, out_json)
-    return resp
+def parse_pdf(pdf_path: Path) -> dict:
+    resp = _client().parse(document=pdf_path, model=ADE_MODEL)
+    return {
+        "markdown": getattr(resp, "markdown", None),
+        "chunks":   to_jsonable(getattr(resp, "chunks", None)),
+        "splits":   to_jsonable(getattr(resp, "splits", None)),
+        "metadata": to_jsonable(getattr(resp, "metadata", None)),
+        "source_file": pdf_path.name,
+        "model": ADE_MODEL,
+    }
 
 def _tables_from_markdown(md_text: str) -> List[pd.DataFrame]:
     if not md_text:
@@ -105,7 +104,7 @@ def extract_cases_df(parsed: dict) -> pd.DataFrame:
         "Open Date": "Opened Date",
         "Closed Date": "Closed Date",
         "Closed": "Closed Date",
-        # You can extend this with Violation / Violation Status / Citation / Compliance / Resolved if present
+        # Extended fields commonly present in Oakland/Boca tables
         "Violation": "Violation",
         "Violation Status": "Violation Status",
         "Citation Issued": "Citation Issued",
@@ -129,8 +128,9 @@ def extract_cases_df(parsed: dict) -> pd.DataFrame:
         if d in df.columns:
             df[d] = pd.to_datetime(df[d], errors="coerce")
 
-    if parsed.get("source"):
-        df["source_file"] = parsed["source"]
+    # carry through source_file if present
+    if parsed.get("source_file"):
+        df["source_file"] = parsed["source_file"]
     return df.reset_index(drop=True)
 
 # ---------- Batch runners ----------
@@ -138,14 +138,14 @@ def extract_cases_df(parsed: dict) -> pd.DataFrame:
 def parse_batch_to_csv_city(items: Iterable[Tuple[str, Path]], out_name: str = "ade_latest.csv") -> pd.DataFrame:
     """
     items: iterable of (city, pdf_path)
-    Saves raw JSON per file and accumulates a CSV of all extracted tables.
+    Saves raw JSON per file (using parse_pdf in the notebook loop) and accumulates a CSV.
     """
     INTERIM_DIR.mkdir(parents=True, exist_ok=True)
     frames: List[pd.DataFrame] = []
 
     for city, p in items:
         try:
-            parsed = parse_pdf(p, city=city, save_raw=True)
+            parsed = parse_pdf(p)  # <-- removed extraneous args
             df = extract_cases_df(parsed)
             if not df.empty:
                 df["city"] = city
