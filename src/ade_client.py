@@ -8,7 +8,7 @@ import pandas as pd
 
 from landingai_ade import LandingAIADE
 from .config import ADE_API_KEY, ADE_MODEL, INTERIM_DIR, RAW_JSON_DIR
-from .utils import to_jsonable  # <-- relative import
+from .utils import to_jsonable # <-- relative import
 
 try:
     import markdown as mdlib
