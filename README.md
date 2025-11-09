@@ -1,32 +1,33 @@
-# ✅ **README.md**
+# CodeRisk-SF
 
-# Coderisk-SF
+**Modular PDF Data Extraction & Normalization Pipeline for Code Violation Analysis**
 
-**Automated Extraction, Normalization, and Analysis of Code Violation Reports Using LandingAI ADE**
-
-This project provides an end-to-end pipeline for extracting structured data from code-enforcement PDF reports across multiple South Florida cities. It uses **LandingAI’s Agentic Document Extraction (ADE)** to parse heterogeneous documents, apply city-specific schemas, normalize the outputs into a unified structure, and store the results for further risk analysis and reporting.
+A production-ready, scalable pipeline for extracting, cleaning, and consolidating code violation data from heterogeneous PDF reports across South Florida cities. Built with **LandingAI's Agentic Document Extraction (ADE)** and designed with enterprise-grade separation of concerns.
 
 ---
 
-## 1. Project Purpose
+## 1. Architecture Overview
 
-Many cities publish code-violation data as PDF reports with inconsistent formatting, table layouts, and field names.
-This project automates the entire workflow:
+### **Modular Pipeline Design**
+```
+PDFs → 1_extraction.ipynb → cleaning/city_cleaning.ipynb → 3_consolidation.ipynb → Master Dataset
+```
 
-1. **Extract** PDF data using LandingAI ADE
-2. **Parse tables and metadata** into structured DataFrames
-3. **Apply city-specific normalization rules**
-4. **Unify all cities into a consolidated master dataset**
-5. **Store results for risk analysis (CSV + Parquet)**
-6. **Preserve raw JSON output for traceability and audits**
+**🎯 Separation of Concerns:**
+- **Extraction**: Generic PDF processing across all cities
+- **Cleaning**: City-specific schema normalization  
+- **Consolidation**: Unified master dataset creation
 
-This enables scalable analytics such as:
+**📊 Supported Cities:**
+- Boca Raton, Oakland Park, Pompano Beach
+- Wilton Manors, Margate
+- Extensible architecture for new cities
 
-* Most frequent violation types
-* Geographic risk patterns
-* Repeated offenders
-* Time-to-closure metrics
-* City-to-city comparisons
+**🔧 Enterprise Features:**
+- Raw data preservation for audit trails
+- Resume capability for large datasets
+- Standardized column schemas with `_raw` suffix
+- Source file tracking for data lineage
 
 ---
 
@@ -35,159 +36,242 @@ This enables scalable analytics such as:
 ```
 coderisk-sf/
 │
-├── input_folder/                 # Raw PDFs grouped by city
-│   ├── oaklandpark/
+├── input_folder/                 # Raw PDFs by city
 │   ├── bocaraton/
-│   ├── pompano/
-│   └── wiltonmanor/
-│
-├── results_folder/               # Extraction outputs
 │   ├── oaklandpark/
-│   │   ├── raw_json/             # Raw ADE JSON output
-│   │   └── tables/               # CSV and Parquet tables per PDF
-│   ├── bocaraton/
-│   │   ├── raw_json/
-│   │   └── tables/
 │   ├── pompano/
-│   │   ├── raw_json/
-│   │   └── tables/
-│   └── wiltonmanor/
-│       ├── raw_json/
-│       └── tables/
+│   ├── wiltonmanors/             # Official city name (plural)
+│   └── margate/                  # New city support
 │
-├── src/
-│   ├── ade_client.py             # ADE parsing and table extraction
-│   ├── normalizers.py            # City-level and global normalization
-│   ├── db.py                     # Optional SQLite utilities
-│   ├── utils.py                  # Helper functions
-│   ├── config.py                 # API key + model configuration
-│   └── ade_work.ipynb            # Main Jupyter workflow
+├── results_folder/               # Extraction pipeline outputs
+│   ├── bocaraton/
+│   │   ├── raw_json/             # Preserved ADE JSON (audit trail)
+│   │   └── tables/               # Raw CSV tables per PDF
+│   └── [other cities...]/
+│
+├── clean_data/                   # Normalized city datasets
+│   ├── bocaraton_clean.csv
+│   ├── oaklandpark_clean.csv
+│   └── master_violations.csv     # Consolidated dataset
+│
+├── cleaning/                     # City-specific cleaning notebooks
+│   ├── bocaraton_cleaning.ipynb
+│   └── [city]_cleaning.ipynb     # Template-based approach
+│
+├── src/                          # Core pipeline modules
+│   ├── 1_extraction.ipynb        # Generic PDF extraction
+│   ├── 3_consolidation.ipynb     # Master dataset creation
+│   ├── ade_client.py             # LandingAI ADE wrapper
+│   ├── normalizers.py            # City-specific schema mapping
+│   ├── normalizer_dispatch.py    # City → normalizer routing
+│   ├── utils.py                  # Data processing utilities  
+│   └── __pycache__/
 │
 ├── requirements.txt
-└── .env.example                  # Example environment configuration
+├── .env                          # VISION_AGENT_API_KEY
+└── README.md
 ```
 
 ---
 
-## 3. Environment Setup
+## 3. Quick Start
 
-### Create and activate a virtual environment
-
-```
+### **1. Environment Setup**
+```bash
 python -m venv .venv
-source .venv/bin/activate       # macOS/Linux
 .venv\Scripts\activate          # Windows
-```
+source .venv/bin/activate       # macOS/Linux
 
-### Install dependencies
-
-```
 pip install -r requirements.txt
 ```
 
-### Configure environment variables
-
-Rename `.env.example` to `.env` and set:
-
+### **2. API Configuration**
+Create `.env` file in project root:
 ```
-VISION_AGENT_API_KEY=your-landingai-key
-ADE_MODEL=dpt-2
+VISION_AGENT_API_KEY=your-landingai-api-key
 ```
 
----
+### **3. Run the Pipeline**
+```bash
+# 1. Extract PDFs → Raw JSON + CSV tables
+jupyter notebook src/1_extraction.ipynb
 
-## 4. Folder Initialization
+# 2. Clean city data → Standardized schemas  
+jupyter notebook cleaning/bocaraton_cleaning.ipynb
 
-Before running extraction, create the expected output structure:
-
-```
-mkdir -p input_folder/oaklandpark
-mkdir -p input_folder/bocaraton
-mkdir -p input_folder/pompano
-mkdir -p input_folder/wiltonmanor
-
-mkdir -p results_folder/oaklandpark/raw_json
-mkdir -p results_folder/oaklandpark/tables
-mkdir -p results_folder/bocaraton/raw_json
-mkdir -p results_folder/bocaraton/tables
-mkdir -p results_folder/pompano/raw_json
-mkdir -p results_folder/pompano/tables
-mkdir -p results_folder/wiltonmanor/raw_json
-mkdir -p results_folder/wiltonmanor/tables
+# 3. Consolidate → Master dataset
+jupyter notebook src/3_consolidation.ipynb
 ```
 
-Place your PDFs in the corresponding city folders.
-
 ---
 
-## 5. Running the Extraction (ADE)
+## 4. Pipeline Architecture
 
-The workflow is driven from:
-
+### **📁 Data Flow**
 ```
-src/ade_work.ipynb
+input_folder/city/file.pdf
+    ↓ [1_extraction.ipynb]
+results_folder/city/raw_json/file.json  +  results_folder/city/tables/file.csv
+    ↓ [cleaning/city_cleaning.ipynb]  
+clean_data/city_clean.csv
+    ↓ [3_consolidation.ipynb]
+clean_data/master_violations.csv
 ```
 
-The notebook performs:
+### **🏗️ Normalizer Architecture**
+- **`normalizers.py`**: City-specific column mapping functions
+- **`normalizer_dispatch.py`**: Smart city → normalizer routing
+- **Standardized Schema**: All cities produce identical output columns:
+  - `violation_id`, `violation_id_raw`
+  - `parcel_number`, `parcel_number_raw` 
+  - `city`, `source_file`, `address_raw`
+  - Date fields: `opened_date_raw`, `closed_date_raw`
+  - Status fields: `case_status_raw`, `violation_type_raw`
 
-1. Environment and path setup
-2. Initialization of the LandingAI ADE client
-3. Directory scanning and validation
-4. PDF parsing using `.parse()`
-5. Saving raw JSON outputs
-6. Parsing tables into pandas DataFrames
-7. Saving normalized tables per PDF
-
----
-
-## 6. Normalization Layer
-
-Each city uses different column names and formats.
-The normalization layer performs:
-
-* Column standardization
-* Date parsing (open/close dates)
-* Standard field alignment (Case Number, Case Type, Status, Address, Parcel, Assigned To, etc.)
-* City tagging
-* Output validation
-
-This enables merging all cities into a unified master dataset for analytics.
+### **🔄 Resume Capability**
+- Extraction automatically skips processed files
+- Cleaning notebooks can incrementally process new extractions
+- Full audit trail preserved in `raw_json/` folders
 
 ---
 
-## 7. Output Formats
+## 5. Supported Cities & Schema
 
-Each PDF produces:
+### **🏙️ Current Cities**
+| City | Normalizer Function | Schema Notes |
+|------|-------------------|--------------|
+| **Boca Raton** | `normalize_boca()` | Full ADE standard format |
+| **Oakland Park** | `normalize_oakland()` | Shared with Boca (identical schema) |
+| **Pompano Beach** | `normalize_pompano()` | Extended with days_active, actions |
+| **Wilton Manors** | `normalize_wilton()` | Simplified schema |
+| **Margate** | `normalize_margate()` | Combined fields (address+violation) |
 
-* `raw_json/*.json` — full ADE JSON output
-* `tables/*.csv` — extracted table
-* `tables/*.parquet` — column-preserving version for analytics
+### **🔧 Adding New Cities**
+1. Add PDF folder: `input_folder/newcity/`
+2. Create normalizer: `normalize_newcity()` in `normalizers.py`
+3. Update dispatcher: Add `"newcity": "normalize_newcity"` mapping
+4. Create cleaning notebook: `cleaning/newcity_cleaning.ipynb`
 
----
-
-## 8. Future Enhancements
-
-The project is designed to support future extensions:
-
-* Automatic schema inference
-* Retrieval-augmented enrichment (zip code lookup, geocoding, census data)
-* Trend forecasting
-* Risk scoring models
-* API endpoints for real-time queries
-
----
-
-## 9. Requirements
-
-Python 3.10+
-LandingAI ADE SDK
-pandas
-markdown
-pyarrow
-Jupyter Notebook
+### **📋 Standard Output Schema**
+Every city produces these columns:
+```python
+violation_id, violation_id_raw        # Unique case identifiers
+parcel_number, parcel_number_raw      # Property identifiers (may be None)
+city, source_file, address_raw        # Metadata and location
+opened_date_raw, closed_date_raw      # Temporal data
+case_status_raw, violation_type_raw   # Status information
+```
 
 ---
 
-## 10. License
+## 6. Key Features
 
-This project is developed for the LandingAI Financial Hack NYC.
+### **🎯 Production-Ready Design**
+- **Separation of Concerns**: Extract → Clean → Consolidate
+- **Data Lineage**: Every record traces back to source PDF + file
+- **Schema Evolution**: Cities can change formats independently
+- **Resume Support**: Skip already-processed files automatically
+
+### **📊 Data Quality**
+- **Raw Preservation**: Original data never lost (`_raw` suffix fields)
+- **Validation**: Automatic data type coercion and date parsing
+- **Deduplication**: Row-level hashing for duplicate detection
+- **Missing Data**: Graceful handling of cities without parcel numbers
+
+### **🔄 Scalability**
+- **Template-Based**: New cities follow established patterns
+- **Modular Processing**: Process one city or all cities
+- **Incremental Updates**: Add new PDFs without reprocessing existing data
+
+---
+
+## 7. Technical Implementation
+
+### **🔧 LandingAI ADE Integration**
+```python
+# src/ade_client.py - Clean wrapper around ADE SDK
+from landingai_ade import LandingAIADE
+
+ade_client = LandingAIADE(apikey=api_key)
+parsed = ade_client.parse(pdf_path)        # Extract structured data
+tables = extract_cases_df(parsed)          # Convert to DataFrame
+```
+
+### **🏗️ Normalizer Pattern**
+```python
+# src/normalizer_dispatch.py - Smart routing
+normalizer = pick_normalizer("bocaraton")  # Returns normalize_boca()
+clean_df = normalizer(raw_df, "bocaraton", "source_file.pdf")
+```
+
+### **📁 File Organization**
+```
+Per PDF: source.pdf → source.json + source.csv
+Per City: city_clean.csv (all PDFs consolidated)  
+Master: master_violations.csv (all cities unified)
+```
+
+---
+
+## 8. Analytics Ready
+
+### **📈 Ready for Analysis**
+```python
+import pandas as pd
+
+# Load master dataset
+df = pd.read_csv('clean_data/master_violations.csv')
+
+# Violation frequency by city
+df.groupby('city')['violation_id'].count()
+
+# Missing parcel analysis
+df[df['parcel_number'].isna()]['city'].value_counts()
+
+# Temporal patterns
+df['opened_date'] = pd.to_datetime(df['opened_date_raw'])
+df.groupby([df['opened_date'].dt.year, 'city']).size()
+```
+
+### **🎯 Use Cases**
+- **Risk Assessment**: Identify high-violation areas
+- **Compliance Tracking**: Monitor case resolution times  
+- **Resource Planning**: Understand enforcement patterns
+- **Cross-City Comparison**: Benchmark violation rates
+
+---
+
+## 9. Dependencies
+
+### **Core Requirements**
+```
+landingai-ade              # LandingAI Agentic Document Extraction
+pandas>=2.0.0              # Data manipulation and analysis
+python-dotenv              # Environment variable management
+pathlib                    # Modern path handling (built-in)
+jupyter                    # Notebook environment   
+```
+
+### **Optional Enhancements**
+```
+pyarrow                    # Parquet file support
+openpyxl                   # Excel output support
+```
+
+---
+
+## 10. Project Status
+
+**🎯 LandingAI Financial Hack NYC 2025**
+
+**Current Status**: Production-ready modular pipeline
+- ✅ Generic extraction with resume capability
+- ✅ City-specific normalization with schema standardization  
+- ✅ Scalable architecture for new cities
+- 🔄 Consolidation notebook (in development)
+
+**Architecture Highlights**:
+- Enterprise-grade separation of concerns
+- Future-proof normalizer dispatch pattern
+- Raw data preservation for audit trails
+- Template-based extensibility for new cities

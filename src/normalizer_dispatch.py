@@ -8,13 +8,14 @@ def pick_normalizer(city_label: str):
     key = city_label.lower().replace(" ", "").replace("-", "").replace("_", "")
 
     mapping = {
-        "oaklandpark":  "normalize_oakland_boca",
-        "bocaraton":    "normalize_oakland_boca",
+        "oaklandpark":  "normalize_oakland",
+        "bocaraton":    "normalize_boca",
 
         "pompano":      "normalize_pompano",
 
-        "wiltonmanor":  "normalize_wilton",
-        "wiltonmanors": "normalize_wilton",
+        "wiltonmanors": "normalize_wilton",  # Official city name: Wilton Manors
+
+        "margate":      "normalize_margate",
     }
 
     # Default fallback if nothing matches
