@@ -1,0 +1,569 @@
+0,1,2,3,4,chunk_id,source_file,city
+File#,Violation,Address,Open Date,Status,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000002,Building Safety Inspection Program.,2607 NE 8 Avenue # 22,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000021,Building Safety Inspection Program.,2607 NE 8 Avenue # 36,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000014,Building Safety Inspection Program.,2607 NE 8 Avenue # 32,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000003,Building Safety Inspection Program.,2607 NE 8 Avenue # 23,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000004,Building Safety Inspection Program.,2607 NE 8 Avenue # 24,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000015,Building Safety Inspection Program.,2607 NE 8 Avenue # 33,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000008,Required Permit Approvals - building permit,2301 WILTON Drive,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-003842,Building Safety Inspection Program.,2607 NE 8 Avenue # 19,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-003843,Building Safety Inspection Program.,2607 NE 8 Avenue # 20,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000005,Building Safety Inspection Program.,2607 NE 8 Avenue # 25,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-003841,Building Safety Inspection Program.,2607 NE 8 Avenue # 17,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000011,Building Safety Inspection Program.,2607 NE 8 Avenue # 29,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000009,Building Safety Inspection Program.,2607 NE 8 Avenue # 28,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000013,Building Safety Inspection Program.,2607 NE 8 Avenue # 31,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000017,Building Safety Inspection Program.,2607 NE 8 Avenue # 34,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000012,Building Safety Inspection Program.,2607 NE 8 Avenue # 30,01/02/2024,Closed,4,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000007,Building Safety Inspection Program.,2607 NE 8 Avenue # 27,01/02/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000006,Building Safety Inspection Program.,2607 NE 8 Avenue # 26,01/02/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000001,Building Safety Inspection Program.,2607 NE 8 Avenue # 21,01/02/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000019,Building Safety Inspection Program.,2607 NE 8 Avenue # 35,01/02/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000020,Dumping in drains,416 NW 24 Street,01/02/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000034,Building Safety Inspection Program.,2607 NE 8 Avenue # 46,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000045,Building Safety Inspection Program.,2607 NE 8 Avenue # 54,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000052,Building Safety Inspection Program.,2607 NE 8 Avenue # 59,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000049,Building Safety Inspection Program.,2607 NE 8 Avenue # 57,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000033,Building Safety Inspection Program.,2607 NE 8 Avenue # 45,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000044,Building Safety Inspection Program.,2607 NE 8 Avenue # 53,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000041,Building Safety Inspection Program.,2607 NE 8 Avenue # 50,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000042,Building Safety Inspection Program.,2607 NE 8 Avenue # 51,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000046,Building Safety Inspection Program.,2607 NE 8 Avenue # 55,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000029,Building Safety Inspection Program.,2607 NE 8 Avenue # 42,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000023,Building Safety Inspection Program.,2607 NE 8 Avenue # 37,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000048,Building Safety Inspection Program.,2607 NE 8 Avenue # 56,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000031,Building Safety Inspection Program.,2607 NE 8 Avenue # 44,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000035,Building Safety Inspection Program.,2607 NE 8 Avenue # 47,01/03/2024,Closed,9,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000030,Building Safety Inspection Program.,2607 NE 8 Avenue # 43,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000050,Building Safety Inspection Program.,2607 NE 8 Avenue # 58,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000032,Outdoor Storage,2468 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000032,Prohibited outside display of merchandise,2468 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000032,General Special Events Permit,2468 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000032,Permit requirements. Special Events,2468 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000028,Outdoor Storage,2440 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000028,Required Permit Approvals - building permit,2440 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000028,General Special Events Permit,2440 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000028,Permit requirements. Special Events,2440 WILTON Drive,01/03/2024,Open,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000027,Building Safety Inspection Program.,2607 NE 8 Avenue # 41,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000059,Building Safety Inspection Program.,1951 NE 2 Avenue APT 101-1,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000058,Building Safety Inspection Program.,2607 NE 8 Avenue # 64,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000056,Building Safety Inspection Program.,2607 NE 8 Avenue # 62,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000053,Building Safety Inspection Program.,2607 NE 8 Avenue # 60,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000039,Building Safety Inspection Program.,2607 NE 8 Avenue # 49,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000026,Building Safety Inspection Program.,2607 NE 8 Avenue # 40,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000055,Building Safety Inspection Program.,2607 NE 8 Avenue # 61,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000043,Building Safety Inspection Program.,2607 NE 8 Avenue # 52,01/03/2024,Closed,14,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000025,Building Safety Inspection Program.,2607 NE 8 Avenue # 39,01/03/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000037,Building Safety Inspection Program.,2607 NE 8 Avenue # 48,01/03/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000024,Building Safety Inspection Program.,2607 NE 8 Avenue # 38,01/03/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000061,Building Safety Inspection Program.,1951 NE 2 Avenue APT 103-1,01/03/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000057,Building Safety Inspection Program.,2607 NE 8 Avenue # 63,01/03/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000060,Building Safety Inspection Program.,1951 NE 2 Avenue APT 102-I,01/03/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000098,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 205 I,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000079,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 108-I,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000087,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 115-I,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000074,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 105-I,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000105,Building Safety Inspection Program.,2607 NE 8 Avenue UNITS 1-64,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000088,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 116-1,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000099,Required Permit Approvals - building permit,2633 NE 6 Avenue,01/08/2024,Open,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000082,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 111-1,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000095,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 203 I,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000103,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 209 I,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000080,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 109-1,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000092,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 118-1,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000104,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 210-1,01/08/2024,Closed,19,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000073,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 104-I,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000081,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 110I,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000086,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 114-I,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000100,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT206-I,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000076,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 106-I,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000090,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 117-1,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000097,Landscape maintenance,409 NE 26 Drive,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000097,"General Prohibitions (sidewalk, swale, etc.)",409 NE 26 Drive,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000102,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 208-1,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000101,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 207-1,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000094,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 202-1,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000077,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 107-1,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000093,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 201-1,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000096,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 204-1,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000083,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 112 I,01/08/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000126,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 105-J,01/09/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000118,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 102-J,01/09/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000116,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 101-J,01/09/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000111,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 216-1,01/09/2024,Closed,24,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000130,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 108-J,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000113,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 218-I,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000131,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 109-J,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000128,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 106-J,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000125,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 104-J,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000112,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 217-I,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000107,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 211-I,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000109,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 214-I,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000108,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 212-I,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000110,Building Safety Inspection Program.,1951 NE 2 Avenue UNIT 215-I,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000129,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 107-J,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000119,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 103-J,01/09/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000135,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 110-J,01/10/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000136,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 111-J,01/10/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000137,Building Safety Inspection Program.,"320 NE 19 CT MANOR GROVE VILLAGE 4 BLDGS I,J,K,L,M,N,",01/10/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000145,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 117-J,01/10/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000139,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 114 J,01/10/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000144,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 116-J,01/10/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000140,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 115 J,01/10/2024,Closed,29,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000138,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 112-J,01/10/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000162,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 205-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000161,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 204-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000164,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 207-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000163,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 206-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000159,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 202-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000167,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 209-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000160,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 203-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000157,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 201-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000156,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 118-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000166,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 208-J,01/11/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000193,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 210-J,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000200,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 216-J,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000205,Local Business Tax Receipts,102 NE 29 Street,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000191,Code Out - No Violation/Misc./Referred/Unfounded,2660 NE 8 Avenue 219,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000197,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 214-J,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000203,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 218-J,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000190,Code Out - No Violation/Misc./Referred/Unfounded,1901 North ANDREWS Avenue 206,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000195,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT212-J,01/16/2024,Closed,34,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000201,"Screens, shutters and awnings.",2312 WILTON Drive,01/16/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000201,Sign - prohibited Snipe signs,2312 WILTON Drive,01/16/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000202,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 217-J,01/16/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000194,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 211-J,01/16/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000199,Building Safety Inspection Program.,1940 NE 2 Avenue UNIT 215-J,01/16/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000187,Local Business Tax Receipts,500 NE 24 Street,01/16/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000207,Building Safety Inspection Program.,351 NE 19 Place UNIT 101-K,01/17/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000208,Building Safety Inspection Program.,351 NE 19 Place UNIT 102-K,01/17/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000211,Building Safety Inspection Program.,351 NE 19 Place UNIT104-K,01/17/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000214,Building Safety Inspection Program.,3002 NE 5 Terrace BUILDING B,01/17/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000215,Building Safety Inspection Program.,3004 NE 5 Terrace BUILDING C,01/17/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000218,Building Safety Inspection Program.,235 NE 23 Street,01/17/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000219,Building Safety Inspection Program.,230 NE 24 Street,01/17/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000221,Building Safety Inspection Program.,210 NE 24 Street,01/17/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000217,Building Safety Inspection Program.,1601 NE 26 Street,01/17/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000220,Building Safety Inspection Program.,215 NE 23 Street,01/17/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000213,Building Safety Inspection Program.,3000 NE 5 Terrace BUILDING A,01/17/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000209,Building Safety Inspection Program.,351 NE 19 Place UNIT 103-K,01/17/2024,Closed,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000223,Noise - Animals,640 NW 21 ST,01/17/2024,Open,39,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000251,Local Business Tax Receipts,2809 NW 7 Avenue,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000229,Landscape maintenance,1819-1821 NE 26 Drive,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000229,Trash/Recycle Receptacle Placement,1819-1821 NE 26 Drive,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000229,Landscape maintenance (overgrowth and all other),1819-1821 NE 26 Drive,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000258,Building Safety Inspection Program.,1901 North ANDREWS Avenue #111,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000253,Building Safety Inspection Program.,1901 North ANDREWS Avenue #109,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000153,Rec. vehicles/trailers,1416 NE 22 Street,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000255,Building Safety Inspection Program.,1901 North ANDREWS Avenue #110,01/22/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000271,Building Safety Inspection Program.,1901 North ANDREWS Avenue 114,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000269,Building Safety Inspection Program.,1901 North ANDREWS Avenue 112,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000278,Building Safety Inspection Program.,1901 North ANDREWS Avenue 120,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000277,Building Safety Inspection Program.,1901 North ANDREWS Avenue 119,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000264,Building Safety Inspection Program.,1901 North ANDREWS Avenue HOA,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000275,Building Safety Inspection Program.,1901 North ANDREWS Avenue 118,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000273,Building Safety Inspection Program.,1901 North ANDREWS Avenue 116,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000270,Building Safety Inspection Program.,1901 North ANDREWS Avenue 113,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000274,Building Safety Inspection Program.,1901 North ANDREWS Avenue 117,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000272,Building Safety Inspection Program.,1901 North ANDREWS Avenue 115,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000265,Building Safety Inspection Program.,677 KENSINGTON Place HOA,01/23/2024,Closed,44,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000286,Local Business Tax Receipts,2205 WILTON Drive,01/24/2024,Open,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000290,Building Safety Inspection Program.,1901 North ANDREWS Avenue 121,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000293,Building Safety Inspection Program.,1901 North ANDREWS Avenue 200,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000292,Local Business Tax Receipts,200 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000292,Annual inspection and licensing of properties with RRL,200 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000292,Landscape maintenance,200 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000292,Litter and littering material.,200 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000292,"Fences, walls and hedges",200 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000292,Landscape maintenance (overgrowth and all other),200 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000294,Local Business Tax Receipts,216-218 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000294,Annual inspection and licensing of properties with RRL,216-218 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000294,Landscape maintenance,216-218 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000294,Exterior building condition,216-218 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000294,Landscape maintenance (overgrowth and all other),216-218 NW 25 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000291,Building Safety Inspection Program.,1901 North ANDREWS Avenue 122,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000226,Receptacle placement and times,200 NE 22 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000226,Landscape maintenance,200 NE 22 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000226,Trash/Recycle Receptacle Placement,200 NE 22 Street,01/25/2024,Closed,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000301,Required Permit Approvals - building permit,2740 North Andrews Avenue,01/29/2024,Open,49,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000301,Local Business Tax Receipts,2740 North Andrews Avenue,01/29/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000301,Permit procedures - Signs,2740 North Andrews Avenue,01/29/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000072,Landscape maintenance,209 NE 27 Drive,01/29/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000072,Landscape maintenance (overgrowth and all other),209 NE 27 Drive,01/29/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000314,Annual inspection and licensing of properties with RRL,2624 NW 5 Avenue,01/29/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000320,Local Business Tax Receipts,709 NW 29 Street,01/29/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000320,Registration required. VRL,709 NW 29 Street,01/29/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000320,Annual inspection and licensing of properties with RRL,709 NW 29 Street,01/29/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000065,Landscape maintenance,49 NE 28 CT,01/29/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000313,Local Business Tax Receipts,2701 North ANDREWS Avenue,01/29/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000148,Required Permit Approvals - building permit,2225 NE 17th Terrace,01/29/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000317,Code Out - No Violation/Misc./Referred/Unfounded,2660 NE 8 Avenue 308,01/29/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000341,Building Safety Inspection Program.,1901 North ANDREWS Avenue 211,01/30/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000327,Building Safety Inspection Program.,1901 North ANDREWS Avenue 203,01/30/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000332,Building Safety Inspection Program.,1901 North ANDREWS Avenue 206,01/30/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000343,Required Permit Approvals - building permit,3072 NE 5 Avenue,01/30/2024,Open,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000339,Building Safety Inspection Program.,1901 North ANDREWS Avenue 210,01/30/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000353,Building Safety Inspection Program.,1901 North ANDREWS Avenue 212,01/30/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000330,Building Safety Inspection Program.,1901 North ANDREWS Avenue 205,01/30/2024,Closed,54,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000338,"Container storage, enclosure and screening.",200 NW 25 Street,01/30/2024,Open,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000338,Trash/Recycle Receptacle Placement,200 NW 25 Street,01/30/2024,Open,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000325,Required Permit Approvals - building permit,35 NE 29 Street,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000335,Building Safety Inspection Program.,1901 North ANDREWS Avenue 208,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000334,Building Safety Inspection Program.,1901 North ANDREWS Avenue 207,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000340,Landscape maintenance,208 NE 23 Street,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000340,Swales/right-of-way.,208 NE 23 Street,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000340,Driveways and other parking areas - Free of weeds,208 NE 23 Street,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000340,"Fences, walls and hedges",208 NE 23 Street,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000340,Landscape maintenance (overgrowth and all other),208 NE 23 Street,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000324,Building Safety Inspection Program.,1901 North ANDREWS Avenue 202,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000329,Building Safety Inspection Program.,1901 North ANDREWS Avenue 204,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000342,General,1881 NE 26 Street,01/30/2024,Open,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000337,Building Safety Inspection Program.,1901 North ANDREWS Avenue 209,01/30/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000361,Required Permit Approvals - building permit,2000 NE 15 Avenue,01/31/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000360,Local Business Tax Receipts,2748 NE 8 Avenue,01/31/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000223,Noise - Animals,640 NW 21 ST,01/31/2024,Open,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000232,Outdoor Lighting,2665 NE 8 AVE 1-4,01/31/2024,Open,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000185,Code Out - No Violation/Misc./Referred/Unfounded,2733 Andews Avenue,01/31/2024,Closed,59,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000185,Required Permit Approvals - building permit,2733 Andews Avenue,01/31/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000366,Annual inspection and licensing of properties with RRL,2164 NE 27 Drive,01/31/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000376,Landscape maintenance,2620 North ANDREWS Avenue,02/01/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000372,"Screens, shutters and awnings.",500 NE 26 DR,02/01/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000372,"Fences, walls and hedges",500 NE 26 DR,02/01/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000372,Landscape maintenance (overgrowth and all other),500 NE 26 DR,02/01/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000370,Outdoor Lighting,2655 NE 8 Avenue,02/01/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000359,Landscape maintenance (overgrowth and all other),2812 NW 12 Avenue,02/01/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000388,Landscape maintenance,208 NE 23 Street,02/05/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000383,Landscape maintenance,551 NE 26 Street,02/06/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000383,Noise - Construction,551 NE 26 Street,02/06/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000401,Code Out - No Violation/Misc./Referred/Unfounded,2624 NW 5 Avenue,02/06/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000386,Residential bulk trash collection.,332 NE 29 Street,02/06/2024,Closed,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000381,Required Permit Approvals - building permit,401 NE 27 Drive,02/06/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000404,Landscape maintenance,1420 NE 23 Street,02/06/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000399,Required Permit Approvals - building permit,2508 NE 7 Avenue,02/06/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000403,Required Permit Approvals - building permit,409 NE 27 Drive,02/06/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000409,Landscape maintenance,341 NE 29 Street,02/07/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000409,Exterior building condition,341 NE 29 Street,02/07/2024,Open,64,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000411,Landscape maintenance,2821 NE 15 Terrace,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000413,Landscape maintenance,1529 NE 28 Drive,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000414,Landscape maintenance,1528 NE 28 Drive,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000406,"Pools, decks and screen enclosures",2181 NE 27 Drive,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000406,Landscape maintenance,2181 NE 27 Drive,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000412,Landscape maintenance,1532 NE 28 Drive,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000385,Receptacle placement and times,2525 NW 9 Terrace,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000385,Business tax schedule.,2525 NW 9 Terrace,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000385,Trash/Recycle Receptacle Placement,2525 NW 9 Terrace,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000385,Exterior building condition,2525 NW 9 Terrace,02/07/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000404,Receptacle placement and times,1420 NE 23 Street,02/08/2024,Open,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000261,Open or outside storage,2632 NE 10 Avenue,02/08/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000261,Litter and littering material.,2632 NE 10 Avenue,02/08/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000261,Roofs and gutters,2632 NE 10 Avenue,02/08/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000261,Canopies and coverings.,2632 NE 10 Avenue,02/08/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000261,Landscape maintenance (overgrowth and all other),2632 NE 10 Avenue,02/08/2024,Closed,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000458,Landscape maintenance,215 NE 28 CT,02/12/2024,Open,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000458,Pools/hot tubs/fountains.,215 NE 28 CT,02/12/2024,Open,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000458,Stagnant water.,215 NE 28 CT,02/12/2024,Open,69,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000458,Landscape maintenance (overgrowth and all other),215 NE 28 CT,02/12/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000417,Local Business Tax Receipts,1517 NE 28 Drive,02/12/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000417,Registration required. VRL,1517 NE 28 Drive,02/12/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000413,Residential bulk trash collection.,1529 NE 28 Drive,02/12/2024,Closed,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000471,Required Permit Approvals - building permit,2140 NE 25 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000471,Landscape maintenance,2140 NE 25 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000471,Litter and littering material.,2140 NE 25 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000471,Roofs and gutters,2140 NE 25 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000471,"Stairs, porches and railings",2140 NE 25 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000471,"Fences, walls and hedges",2140 NE 25 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000471,Fascia/borders/decorative bands/soffits.,2140 NE 25 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000456,Residential bulk trash collection.,26 NE 27 Drive,02/13/2024,Closed,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000476,Required Permit Approvals - building permit,801 NW 24 Street,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000466,Local Business Tax Receipts,2441 NW 9 Terrace,02/13/2024,Closed,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000466,Registration required. VRL,2441 NW 9 Terrace,02/13/2024,Closed,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000465,Local Business Tax Receipts,2506 NE 6 AVE,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000465,Registration required. VRL,2506 NE 6 AVE,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000465,Annual inspection and licensing of properties with RRL,2506 NE 6 AVE,02/13/2024,Open,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000473,Local Business Tax Receipts,2001 NE 25 Street,02/13/2024,Closed,74,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000470,Dumping in drains,300 NE 26 Drive,02/13/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000462,Landscape maintenance,409 NE 26 Drive,02/13/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000462,Roofs and gutters,409 NE 26 Drive,02/13/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000462,Fascia/borders/decorative bands/soffits.,409 NE 26 Drive,02/13/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000462,Landscape maintenance (overgrowth and all other),409 NE 26 Drive,02/13/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000462,Residential bulk trash collection.,409 NE 26 Drive,02/13/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000462,Boats/trailers,409 NE 26 Drive,02/13/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000490,Landscape maintenance,709 NW 29 Street,02/14/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000485,Graffiti.,2199 WILTON Drive,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000488,Required Permit Approvals - building permit,2000 NE 6 Terrace,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000486,Required Permit Approvals - building permit,800 NE 20 DR,02/14/2024,Open,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000493,Required Permit Approvals - building permit,325 NE 25 Street,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000481,Landscape maintenance,200 NW 25 Street,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000481,Maintenance requirements.,200 NW 25 Street,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000479,Local Business Tax Receipts,2307 NE 15 Terrace,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000482,Maintenance requirements.,216 NW 25 Street,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000441,Local Business Tax Receipts,2417 NE 19 Avenue,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000480,Local Business Tax Receipts,308 NE 27 Drive,02/14/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000505,Required Permit Approvals - building permit,715 NW 30 CT,02/15/2024,Closed,79,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000499,Local Business Tax Receipts,917 NE 23 Drive,02/15/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000510,Code Out - No Violation/Misc./Referred/Unfounded,1432 NE 27 Drive,02/15/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000502,Required Permit Approvals - building permit,2925 NE 1 Avenue,02/15/2024,Open,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000503,Required Permit Approvals - building permit,2131 NE 15 Terrace,02/15/2024,Open,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000528,Local Business Tax Receipts,1920 NE 26 Drive,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000528,Registration required. VRL,1920 NE 26 Drive,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000520,Residential bulk trash collection.,38 NE 26 Drive,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000518,"Parking or storage of commercial vehicles, etc.",1732 CORAL GARDENS Drive,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000521,Outdoor Storage,724 NW 23 Street,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000521,Exterior building condition,724 NW 23 Street,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000521,Fascia/borders/decorative bands/soffits.,724 NW 23 Street,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000521,"General Prohibitions (sidewalk, swale, etc.)",724 NW 23 Street,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000542,Required Permit Approvals - building permit,1456 NE 24 CT,02/20/2024,Open,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000542,Litter and littering material.,1456 NE 24 CT,02/20/2024,Open,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000542,Landscape maintenance (overgrowth and all other),1456 NE 24 CT,02/20/2024,Open,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000542,Rec. vehicles/trailers,1456 NE 24 CT,02/20/2024,Open,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000542,Storm shutters placement.,1456 NE 24 CT,02/20/2024,Open,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000543,Fascia/borders/decorative bands/soffits.,1600 NE 25 Street,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000543,"Fences, walls and hedges",1600 NE 25 Street,02/20/2024,Closed,84,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000543,Any accessory structure,1600 NE 25 Street,02/20/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000532,Code Out - No Violation/Misc./Referred/Unfounded,2308 NW 3 Avenue,02/20/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000558,Sign general regulations - materials,216 East OAKLAND PARK Boulevard,02/21/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000201,"Fences, walls and hedges",2312 WILTON Drive,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+23-003527,Code Out - No Violation/Misc./Referred/Unfounded,2208 NE 18 Avenue,02/21/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000550,Enclosure requirements - Maintenance,2980 North ANDREWS Avenue,02/21/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000550,Graffiti.,2980 North ANDREWS Avenue,02/21/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+23-003361,Code Out - No Violation/Misc./Referred/Unfounded,2301 NE 17th Terrace,02/21/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000552,Sign general regulations - materials,50-100 West OAKLAND PARK Boulevard,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000331,Outdoor Storage,1001 28 dr. 33334,02/21/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000545,Annual inspection and licensing of properties with RRL,832 NW 28 Street,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000545,Landscape maintenance,832 NW 28 Street,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000545,Landscape maintenance (overgrowth and all other),832 NW 28 Street,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000545,"General Prohibitions (sidewalk, swale, etc.)",832 NW 28 Street,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000545,"Parking or storage of commercial vehicles, etc.",832 NW 28 Street,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000551,Unsafe Dwellings,2008 NE 3 Avenue,02/21/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000569,Local Business Tax Receipts,2609 NW 6 Avenue,02/22/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000569,Registration required. VRL,2609 NW 6 Avenue,02/22/2024,Closed,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000561,Registration required. VRL,2912 NW 11 Avenue,02/22/2024,Open,89,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000561,"Penalties, Offenses, Suspension and Revocation. VRL",2912 NW 11 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000561,"Pool, spa, hot tub safety/Gates",2912 NW 11 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000561,Responsible party required. VRL,2912 NW 11 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000566,Local Business Tax Receipts,600 West OAKLAND PARK Boulevard,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000566,Storm shutters placement.,600 West OAKLAND PARK Boulevard,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000565,Sign - prohibited Snipe signs,2349 NW 9 Avenue,02/22/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000565,Sign - prohibited wind signs,2349 NW 9 Avenue,02/22/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000573,Local Business Tax Receipts,2113 NE 15 Avenue,02/22/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000573,Registration required. VRL,2113 NE 15 Avenue,02/22/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000573,"Penalties, Offenses, Suspension and Revocation. VRL",2113 NE 15 Avenue,02/22/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000564,Roofs and gutters,2716 NE 1 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000564,Fascia/borders/decorative bands/soffits.,2716 NE 1 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000564,"Fences, walls and hedges",2716 NE 1 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000564,Landscape maintenance (overgrowth and all other),2716 NE 1 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000568,Local Business Tax Receipts,1501 NE 24 Street,02/22/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000568,Registration required. VRL,1501 NE 24 Street,02/22/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000563,Residential bulk trash collection.,2717 NE 1 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000563,Landscape maintenance,2717 NE 1 Avenue,02/22/2024,Open,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000584,Outdoor Storage,206 NE 29 Street,02/25/2024,Closed,94,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000526,Sandwich Board Signs,2370 WILTON Drive,02/25/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000589,Residential bulk trash collection.,32 NE 26 Drive,02/26/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000586,Sandwich Board Signs,2366 WILTON Drive,02/26/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000594,Prohibited signs,204 East OAKLAND PARK Boulevard,02/26/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000590,Roofs and gutters,333 NE 29 Street,02/26/2024,Open,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000590,Fascia/borders/decorative bands/soffits.,333 NE 29 Street,02/26/2024,Open,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000590,"Stairs, porches and railings",333 NE 29 Street,02/26/2024,Open,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000590,"General Prohibitions (sidewalk, swale, etc.)",333 NE 29 Street,02/26/2024,Open,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000590,Storm shutters placement.,333 NE 29 Street,02/26/2024,Open,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000592,Fascia/borders/decorative bands/soffits.,813 NW 26 Street,02/26/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000592,Driveways and other parking areas - Free of weeds,813 NW 26 Street,02/26/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000611,Local Business Tax Receipts,316 NW 28 CT,02/27/2024,Open,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000590,Landscape maintenance (overgrowth and all other),333 NE 29 Street,02/27/2024,Open,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000602,Prohibited signs,2415 North Dixie HWY,02/27/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000608,Local Business Tax Receipts,2850 North ANDREWS Avenue,02/27/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000591,Residential bulk trash collection.,2731 NE 1 Terrace,02/27/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000606,Local Business Tax Receipts,2031 WILTON Drive,02/27/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000588,Sandwich Board Signs,2406 WILTON Drive,02/27/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000587,Sandwich Board Signs,2410 WILTON Drive,02/27/2024,Closed,99,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000603,Residential bulk trash collection.,900 NW 26 Street,02/27/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000604,Rec. vehicles/trailers,2457 NW 9 Terrace,02/27/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000620,Trash/Recycle Receptacle Placement,48 NE 28 CT,02/28/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000620,Residential bulk trash collection.,48 NE 28 CT,02/28/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000625,Local Business Tax Receipts,400 NW 30 Court,02/29/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000625,Registration required. VRL,400 NW 30 Court,02/29/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000636,Running at large,235 NE 21 Street,03/01/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000636,Dangerous dogs. Part 1,235 NE 21 Street,03/01/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000636,Dangerous Dog Penalties.,235 NE 21 Street,03/01/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000636,Owners of Dangerous Dogs.,235 NE 21 Street,03/01/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000636,Control of Animals on Public Property,235 NE 21 Street,03/01/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000636,Nuisance of dogs or cats,235 NE 21 Street,03/01/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000636,Enforcement; fines for violation.,235 NE 21 Street,03/01/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000639,Landscape maintenance (overgrowth and all other),2819 NW 12 Avenue,03/03/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000653,Landscape maintenance (overgrowth and all other),25 NE 26 Drive,03/04/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000655,Landscape maintenance,308 NE 22 Street,03/04/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000621,Building identification requirements,2625 NE 2 Avenue,03/04/2024,Closed,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000658,Outdoor Storage,1309 NE 23 Street,03/04/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000658,"Parking or storage of commercial vehicles, etc.",1309 NE 23 Street,03/04/2024,Open,104,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000658,Residential bulk trash collection.,1309 NE 23 Street,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000570,Required Permit Approvals - building permit,2717 NE 1 Avenue,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000374,Required Permit Approvals - building permit,2808 NE 10 Avenue,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000374,Drainage.,2808 NE 10 Avenue,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000374,Clear sight triangles,2808 NE 10 Avenue,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000374,"General Prohibitions (sidewalk, swale, etc.)",2808 NE 10 Avenue,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000374,Litter,2808 NE 10 Avenue,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000374,Landscape maintenance,2808 NE 10 Avenue,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000652,Boats/trailers,812 NE 22 Drive,03/04/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000644,Noise - Amplified sound,1909 NE 26 DR,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+23-003741,"Fences, walls and hedges",235 NE 23 Street M204,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+23-003741,Feeding of wild animals prohibited,235 NE 23 Street M204,03/04/2024,Open,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000666,Trash/Recycle Receptacle Placement,500 NW 30 CT,03/05/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000666,Storm shutters placement.,500 NW 30 CT,03/05/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000668,Trash/Recycle Receptacle Placement,508 NW 30 CT,03/05/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000667,Local Business Tax Receipts,1212 NE 26 Street,03/05/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000667,Failure to obtain.,1212 NE 26 Street,03/05/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000675,Local Business Tax Receipts,1904 NE 26 Drive #1-2,03/05/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000675,Failure to obtain.,1904 NE 26 Drive #1-2,03/05/2024,Closed,109,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000670,Local Business Tax Receipts,1881 NE 26 Street 212,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000670,Failure to obtain.,1881 NE 26 Street 212,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000663,Trash/Recycle Receptacle Placement,316 NW 30 CT,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000672,Local Business Tax Receipts,817-819 NE 22 Drive,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000672,Failure to obtain.,817-819 NE 22 Drive,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000673,Local Business Tax Receipts,2201 NE 15 Avenue,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000673,Failure to obtain.,2201 NE 15 Avenue,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000682,Local Business Tax Receipts,120 East OAKLAND PARK Boulevard 105-308,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000682,Failure to obtain.,120 East OAKLAND PARK Boulevard 105-308,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000669,Trash/Recycle Receptacle Placement,509 NW 30 CT,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000665,Landscape maintenance (overgrowth and all other),408 NW 30 CT,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000665,"General Prohibitions (sidewalk, swale, etc.)",408 NW 30 CT,03/05/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000694,Driveways and other parking areas - Free of weeds,507 NE 24 Street,03/06/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000694,Prohibited for certain purposes,507 NE 24 Street,03/06/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000693,"General Prohibitions (sidewalk, swale, etc.)",400 NE 26 Drive,03/06/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000693,"General Prohibitions (sidewalk, swale, etc.)",400 NE 26 Drive,03/06/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000455,Residential bulk trash collection.,349 NE 29 Street,03/07/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000707,Local Business Tax Receipts,2200-2292 WILTON Drive 2290,03/07/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000707,Failure to obtain.,2200-2292 WILTON Drive 2290,03/07/2024,Closed,114,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000708,Local Business Tax Receipts,1920 NE 26 Drive,03/07/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000708,Failure to obtain.,1920 NE 26 Drive,03/07/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000709,Local Business Tax Receipts,1909-1913 NE 26 Street,03/07/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000709,Failure to obtain.,1909-1913 NE 26 Street,03/07/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000700,Required Permit Approvals - building permit,1409 NE 27 Drive,03/07/2024,Open,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000690,Code Out - No Violation/Misc./Referred/Unfounded,108 NE 26 Drive,03/07/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000691,Residential bulk trash collection.,109 ALMAR Drive,03/07/2024,Open,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000714,Local Business Tax Receipts,1950 WILTON Drive 1952,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000714,Failure to obtain.,1950 WILTON Drive 1952,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000721,Local Business Tax Receipts,2525 NW 9 Terrace,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000721,Failure to obtain.,2525 NW 9 Terrace,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000718,Local Business Tax Receipts,600-602 NE 28 Street,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000718,Failure to obtain.,600-602 NE 28 Street,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000728,Local Business Tax Receipts,2000 North ANDREWS Avenue BLDG D,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000728,Failure to obtain.,2000 North ANDREWS Avenue BLDG D,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000716,Local Business Tax Receipts,2501-2519 North ANDREWS Avenue 2507,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000716,Failure to obtain.,2501-2519 North ANDREWS Avenue 2507,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000727,Local Business Tax Receipts,2300 NE 9 Avenue,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000727,Failure to obtain.,2300 NE 9 Avenue,03/08/2024,Closed,119,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000730,Local Business Tax Receipts,2448-2454 NE 13 Avenue 2450,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000730,Failure to obtain.,2448-2454 NE 13 Avenue 2450,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000724,Local Business Tax Receipts,2727 North ANDREWS Avenue,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000724,Failure to obtain.,2727 North ANDREWS Avenue,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000725,Local Business Tax Receipts,2905 NE 6 Avenue 2917,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000725,Failure to obtain.,2905 NE 6 Avenue 2917,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000726,Local Business Tax Receipts,813-815 NE 22 Drive # 1-2,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000726,Failure to obtain.,813-815 NE 22 Drive # 1-2,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000719,Local Business Tax Receipts,120 East OAKLAND PARK Boulevard 207,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000719,Failure to obtain.,120 East OAKLAND PARK Boulevard 207,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000715,Local Business Tax Receipts,2702-2704 NE 6 LN #1-2,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000715,Failure to obtain.,2702-2704 NE 6 LN #1-2,03/08/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000731,Responsible party required. VRL,416 NE 29 Street,03/09/2024,Open,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000731,Parking requirements,416 NE 29 Street,03/09/2024,Open,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000731,Vehicle parked on a hard surface at VR,416 NE 29 Street,03/09/2024,Open,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000690,Maximum Occupancy,108 NE 26 Drive,03/10/2024,Open,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000690,Noise Control - Legislative findings.,108 NE 26 Drive,03/10/2024,Open,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000740,Required Permit Approvals - building permit,351 NE 19 Place,03/11/2024,Closed,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000735,Noise - Amplified sound,108 NE 26 Drive,03/11/2024,Open,124,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,Parking requirements,616 NW 21 Street,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,"Penalties, Offenses, Suspension and Revocation. VRL",616 NW 21 Street,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,Fines,616 NW 21 Street,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,"General Prohibitions (sidewalk, swale, etc.)",616 NW 21 Street,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,Noise - Disturbance,616 NW 21 Street,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,Noise - Amplified sound,616 NW 21 Street,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,Maintain trespass warnings,616 NW 21 Street,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000734,Outdoor Storage,2316 NE 6 Avenue,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000734,Trash/Recycle Receptacle Placement,2316 NE 6 Avenue,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000734,Exterior building condition,2316 NE 6 Avenue,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000734,Fascia/borders/decorative bands/soffits.,2316 NE 6 Avenue,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000734,Driveways and other parking areas - Free of weeds,2316 NE 6 Avenue,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000734,Landscape maintenance (overgrowth and all other),2316 NE 6 Avenue,03/11/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000767,Required Permit Approvals - building permit,600 NW 27 Street,03/12/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000760,Local Business Tax Receipts,2783 North Dixie HWY,03/12/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000760,Failure to obtain.,2783 North Dixie HWY,03/12/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000763,Local Business Tax Receipts,2228 Wilton Drive,03/12/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000763,Failure to obtain.,2228 Wilton Drive,03/12/2024,Open,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000750,Code Out - No Violation/Misc./Referred/Unfounded,412 NW 20 Street,03/12/2024,Closed,129,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000758,Residential bulk trash collection.,2617 NW 9 Avenue,03/12/2024,Closed,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000751,Code Out - No Violation/Misc./Referred/Unfounded,1901 North ANDREWS Avenue 213,03/12/2024,Closed,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000762,Required Permit Approvals - building permit,113 ALMAR Drive,03/12/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000762,Dumping litter prohibited.,113 ALMAR Drive,03/12/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000762,Litter,113 ALMAR Drive,03/12/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000757,Prohibited signs,1442 NE 26 Street,03/12/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000757,Prohibited signs,1442 NE 26 Street,03/12/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000756,Local Business Tax Receipts,2776 North DIXIE HWY,03/12/2024,Closed,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000756,Failure to obtain.,2776 North DIXIE HWY,03/12/2024,Closed,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000755,Code Out - No Violation/Misc./Referred/Unfounded,2809 NE 5th Terrace,03/12/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000776,Required Permit Approvals - building permit,2764 NE 15 Avenue,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000773,Local Business Tax Receipts,2605 North ANDREWS Avenue,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000773,Failure to obtain.,2605 North ANDREWS Avenue,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000779,Required Permit Approvals - building permit,1517 NE 26 Street,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000771,Local Business Tax Receipts,2601 North DIXIE HWY,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000771,Failure to obtain.,2601 North DIXIE HWY,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,Receptacle placement and times,616 NW 21 Street,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000736,Trash/Recycle Receptacle Placement,616 NW 21 Street,03/13/2024,Open,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000789,Local Business Tax Receipts,2312 WILTON Drive 28,03/13/2024,Closed,134,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000789,Failure to obtain.,2312 WILTON Drive 28,03/13/2024,Closed,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000782,Local Business Tax Receipts,2654 North ANDREWS Avenue,03/13/2024,Closed,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000782,Failure to obtain.,2654 North ANDREWS Avenue,03/13/2024,Closed,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000788,Annual inspection and licensing of properties with RRL,721 NW 29 CT,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000788,Running at large,721 NW 29 CT,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000788,Owners of Dangerous Dogs.,721 NW 29 CT,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000788,Control of Animals on Public Property,721 NW 29 CT,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000780,Local Business Tax Receipts,2254 Wilton Drive,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000780,Failure to obtain.,2254 Wilton Drive,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000777,Required Permit Approvals - building permit,2208 NE 18 Avenue,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000785,Landscape maintenance (overgrowth and all other),707 NW 26 Street,03/13/2024,Closed,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000774,"Parking or storage of commercial vehicles, etc.",2725 NE 14 AVE,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000797,Local Business Tax Receipts,2890 North ANDREWS Avenue,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000797,Failure to obtain.,2890 North ANDREWS Avenue,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000787,"General Prohibitions (sidewalk, swale, etc.)",2513 NW 8 AVE,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000787,Exterior building condition,2513 NW 8 AVE,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000787,Fascia/borders/decorative bands/soffits.,2513 NW 8 AVE,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000787,Parking areas - Potholes,2513 NW 8 AVE,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000781,Local Business Tax Receipts,2701-2713 North ANDREWS Avenue 2707,03/13/2024,Open,139,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000781,Failure to obtain.,2701-2713 North ANDREWS Avenue 2707,03/13/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000783,Local Business Tax Receipts,2201 North DIXIE HWY,03/13/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000783,Failure to obtain.,2201 North DIXIE HWY,03/13/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000775,Local Business Tax Receipts,2416 North ANDREWS Avenue,03/13/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000775,Failure to obtain.,2416 North ANDREWS Avenue,03/13/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000784,Parking areas - Potholes,608 NW 26 ST,03/13/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000784,Landscape maintenance (overgrowth and all other),608 NW 26 ST,03/13/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000800,Required Permit Approvals - building permit,417 NE 27 Drive,03/13/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000816,Local Business Tax Receipts,2217 Wilton Drive,03/14/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000816,Failure to obtain.,2217 Wilton Drive,03/14/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000817,Local Business Tax Receipts,2213 North Dixie HWY,03/14/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000817,Failure to obtain.,2213 North Dixie HWY,03/14/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000807,Trash/Recycle Receptacle Placement,1408 NE 23 Street,03/14/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000809,Local Business Tax Receipts,2031D WILTON Drive BURGERS AND BEERS,03/14/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000809,Failure to obtain.,2031D WILTON Drive BURGERS AND BEERS,03/14/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000805,Receptacle placement and times,1420 NE 23 Street,03/14/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000804,Local Business Tax Receipts,2654 North ANDREWS Avenue,03/14/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000804,Failure to obtain.,2654 North ANDREWS Avenue,03/14/2024,Closed,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000806,Local Business Tax Receipts,2410 North Dixie HWY,03/14/2024,Open,144,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000806,Failure to obtain.,2410 North Dixie HWY,03/14/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000813,Local Business Tax Receipts,513 NE 21 CT 2186 WILTON DR,03/14/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000813,Failure to obtain.,513 NE 21 CT 2186 WILTON DR,03/14/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000802,Local Business Tax Receipts,2312 WILTON Drive,03/14/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000802,Failure to obtain.,2312 WILTON Drive,03/14/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000808,Trash/Recycle Receptacle Placement,1404 NE 23 Street,03/14/2024,Closed,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000803,Trash/Recycle Receptacle Placement,1424 NE 23 Street,03/14/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000803,"Fences, walls and hedges",1424 NE 23 Street,03/14/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000826,Local Business Tax Receipts,2312 WILTON Drive,03/15/2024,Closed,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000826,Failure to obtain.,2312 WILTON Drive,03/15/2024,Closed,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000824,Local Business Tax Receipts,2845 North ANDREWS Avenue,03/15/2024,Closed,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000824,Failure to obtain.,2845 North ANDREWS Avenue,03/15/2024,Closed,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000825,Local Business Tax Receipts,8 MIDDLESEX Drive,03/15/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000825,Failure to obtain.,8 MIDDLESEX Drive,03/15/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000819,Local Business Tax Receipts,2365 Wilton Drive,03/15/2024,Closed,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000819,Failure to obtain.,2365 Wilton Drive,03/15/2024,Closed,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000823,Local Business Tax Receipts,2031A WILTON Drive WAGPRIDE,03/15/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000823,Failure to obtain.,2031A WILTON Drive WAGPRIDE,03/15/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
+24-000822,Local Business Tax Receipts,2666-2670 North DIXIE HWY 2666,03/15/2024,Open,149,wilton_Code_Violation_to_March_2024-30p.json,Wilton Manor
