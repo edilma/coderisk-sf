@@ -48,8 +48,57 @@ def normalize_oakland(df: pd.DataFrame, city: str, source_file: str = None) -> p
     return _normalize_standard_ade_format(df, city, source_file)
 
 def normalize_boca(df: pd.DataFrame, city: str, source_file: str = None) -> pd.DataFrame:
-    """Boca Raton specific normalizer - currently uses standard format"""
-    return _normalize_standard_ade_format(df, city, source_file)
+    """Boca Raton specific normalizer - handles fixed multi-level headers"""
+    
+    # Extended rename map for Boca Raton after header fixes
+    rename_map = {
+        # Standard format (if headers are clean)
+        "Case #": "violation_id_raw",
+        "Case Type": "violation_type_raw",
+        "Case Status": "case_status_raw",
+        "Project": "project_raw",
+        "District": "district_raw",
+        "Main Address": "address_raw",
+        "Parcel": "parcel_number_raw",
+        "Assigned To": "assigned_to_raw",
+        "Opened Date": "opened_date_raw",
+        "Closed Date": "closed_date_raw",
+        "Violation": "raw_violation",
+        "Violation Status": "raw_violation_status",
+        "Citation Issued": "citation_issued_raw",
+        "Compliance Date": "compliance_date_raw",
+        "Resolved Date": "resolved_date_raw",
+        "Violation Fee Total": "fee_total_raw",
+        
+        # Potential variations after header cleaning
+        "Case Number": "violation_id_raw",
+        "Address": "address_raw",
+        "Parcel Number": "parcel_number_raw",
+        "Date Opened": "opened_date_raw",
+        "Date Closed": "closed_date_raw",
+        "Fee Total": "fee_total_raw",
+        "Status": "case_status_raw",
+    }
+    
+    df2 = df.rename(columns={k:v for k,v in rename_map.items() if k in df.columns}).copy()
+    df2["violation_id"] = df2.get("violation_id_raw").apply(normalize_case_id) if "violation_id_raw" in df2 else None
+    df2["parcel_number"] = df2.get("parcel_number_raw").apply(normalize_parcel) if "parcel_number_raw" in df2 else None
+    df2["city"] = city
+    df2["source_file"] = source_file
+
+    cols = [
+        "violation_id","violation_id_raw",
+        "parcel_number","parcel_number_raw",
+        "city","source_file","address_raw",
+        "opened_date_raw","closed_date_raw",
+        "violation_type_raw","case_status_raw","project_raw","district_raw","assigned_to_raw",
+        "raw_violation","raw_violation_status","citation_issued_raw","compliance_date_raw","resolved_date_raw",
+        "fee_total_raw"
+    ]
+    out = df2[[c for c in cols if c in df2.columns]].copy()
+    out = coerce_dates(out)
+    out["raw_row_hash"] = out.apply(raw_row_hash, axis=1)
+    return out
 
 def normalize_pompano(df: pd.DataFrame, city: str, source_file: str = None) -> pd.DataFrame:
     # NOTE: Pompano PDFs do not include parcel numbers - parcel_number will be None
