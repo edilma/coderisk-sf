@@ -1,0 +1,80 @@
+{
+  "extraction": {
+    "CASE NUMBER": "23-00100401",
+    "CASE TYPE": "40 YEAR SAFETY INSPECTIONS",
+    "ADDRESS": "5301 W ATLANTIC BLVD",
+    "STATUS": "ACTIVE",
+    "DATE OPENED": "11/07/23",
+    "DAYS ACTIVE": "92",
+    "LAST ACTION": "INITIAL INSPECTION",
+    "NEXT ACTION": "",
+    "RESULT DATE": "",
+    "DUE DATE": "",
+    "_city": "Margate",
+    "_source_file": "Margate_CodeViolations-To-Feb-2024 Building Dept.pdf"
+  },
+  "extraction_metadata": {
+    "CASE NUMBER": {
+      "value": "23-00100401",
+      "references": [
+        "0-8"
+      ]
+    },
+    "CASE TYPE": {
+      "value": "40 YEAR SAFETY INSPECTIONS",
+      "references": [
+        "0-9"
+      ]
+    },
+    "ADDRESS": {
+      "value": "5301 W ATLANTIC BLVD",
+      "references": [
+        "0-9"
+      ]
+    },
+    "STATUS": {
+      "value": "ACTIVE",
+      "references": [
+        "0-a"
+      ]
+    },
+    "DATE OPENED": {
+      "value": "11/07/23",
+      "references": [
+        "0-b"
+      ]
+    },
+    "DAYS ACTIVE": {
+      "value": "92",
+      "references": [
+        "0-b"
+      ]
+    },
+    "LAST ACTION": {
+      "value": "INITIAL INSPECTION",
+      "references": [
+        "0-c"
+      ]
+    },
+    "NEXT ACTION": {
+      "value": "",
+      "references": []
+    },
+    "RESULT DATE": {
+      "value": "",
+      "references": []
+    },
+    "DUE DATE": {
+      "value": "",
+      "references": []
+    }
+  },
+  "metadata": {
+    "filename": "markdown",
+    "org_id": null,
+    "duration_ms": 6557,
+    "credit_usage": 40.6,
+    "job_id": "d6x12uft12d6wqi3af74v6isy",
+    "version": "extract-20250930"
+  }
+}
