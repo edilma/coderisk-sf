@@ -165,13 +165,20 @@ def normalize_wilton(df: pd.DataFrame, city: str, source_file: str = None) -> pd
 
 def normalize_margate(df: pd.DataFrame, city: str, source_file: str = None) -> pd.DataFrame:
     # NOTE: Margate PDFs do not include parcel numbers - parcel_number will be None
+    # This function expects data that has already been parsed from combined columns
     rename_map = {
         "CASE NUMBER": "violation_id_raw",
-        "CASE TYPE ADDRESS": "violation_description_address_raw",
         "STATUS": "case_status_raw",
-        "DATE OPENED DAYS ACTIVE": "date_opened_days_active_raw",
-        "LAST ACTION NEXT ACTION": "last_next_action_raw",
-        "RESULT DATE DUE DATE": "result_due_date_raw",
+        # Parsed columns (already separated)
+        "violation_description_raw": "violation_description_raw",
+        "address_raw": "address_raw", 
+        "opened_date_raw": "opened_date_raw",
+        "days_active_raw": "days_active_raw",
+        "last_action_raw": "last_action_raw",
+        "next_action_raw": "next_action_raw",
+        "result_date_raw": "result_date_raw",
+        "due_date_raw": "due_date_raw",
+        "closed_date_raw": "closed_date_raw"
     }
     df2 = df.rename(columns={k:v for k,v in rename_map.items() if k in df.columns}).copy()
     df2["violation_id"] = df2.get("violation_id_raw").apply(normalize_case_id) if "violation_id_raw" in df2 else None
@@ -182,10 +189,17 @@ def normalize_margate(df: pd.DataFrame, city: str, source_file: str = None) -> p
     cols = [
         "violation_id","violation_id_raw",
         "parcel_number","parcel_number_raw",
-        "city","source_file","violation_description_address_raw",
-        "case_status_raw","date_opened_days_active_raw","last_next_action_raw","result_due_date_raw"
+        "city","source_file","address_raw","violation_description_raw",
+        "case_status_raw","opened_date_raw","closed_date_raw",
+        "days_active_raw","last_action_raw","next_action_raw",
+        "result_date_raw","due_date_raw"
     ]
     out = df2[[c for c in cols if c in df2.columns]].copy()
+    
+    # Convert days_active to numeric
+    if "days_active_raw" in out.columns:
+        out["days_active"] = pd.to_numeric(out["days_active_raw"], errors="coerce")
+    
     out = coerce_dates(out)
     out["raw_row_hash"] = out.apply(raw_row_hash, axis=1)
     return out
