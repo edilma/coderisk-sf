@@ -14,3 +14,12 @@ data/processed/*.csv
 *.DS_Store
 # ignore virtual environment
 .venv/
+
+# Private development notes and guidance
+dev-notes.md
+DEVELOPMENT_NOTES.md
+demo-prep/
+private-notes/
+scratch/
+temp/
+*.tmp
