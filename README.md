@@ -12,7 +12,7 @@ See the SRI system in action with live filtering and real-time analysis
 ### **💻 [Launch Live Dashboard →](streamlit_app/)**
 Experience the SRI system with real multi-city data
 
-![SRI Dashboard Screenshot](assets/screenshots/dashboard-main.png)
+![SRI Dashboard Screenshot](assets/screenshots/dashboard-main.jpg)
 *Interactive SRI Dashboard showing real-time property risk analysis*
 
 ---
@@ -21,10 +21,10 @@ Experience the SRI system with real multi-city data
 
 ### **What It Does**
 The SRI assigns risk scores (1-26+ points) to properties based on code violation patterns, enabling:
-- **Cities**: Prioritize safety inspections 
 - **Investors**: Identify distressed property opportunities
 - **Insurance**: Adjust premiums based on neighborhood risk
 - **Residents**: Make informed housing decisions
+- **Cities**: Prioritize safety inspections 
 
 ### **How It Works**
 **Weighted Risk Scoring:**
@@ -71,7 +71,7 @@ Where:
 - **Wilton Manor**: 5.0% high-risk properties
 - **Risk Range**: 1-26 points (Average: 3.1)
 
-![SRI Analysis Results](assets/screenshots/sri-results-summary.png)
+![SRI Analysis Results](assets/screenshots/sri-results-summary.jpg)
 *Professional SRI analysis dashboard with key findings*
 
 ---
@@ -94,14 +94,8 @@ Where:
 - **Property Table**: Sortable, color-coded results with violation breakdowns
 - **Export Tools**: CSV downloads with custom filtering applied
 
-![Dashboard Features](assets/screenshots/dashboard-features.png)
+![Dashboard Features](assets/screenshots/dashboard-features.jpg)
 *Real-time filtering and interactive visualizations*
-
-### **Perfect for YouTube Demos**
-- Smooth real-time interactions for screen recording
-- Professional visualization quality
-- Clear business value demonstration
-- Intuitive user experience
 
 ---
 
@@ -190,10 +184,6 @@ property_risk_score = (
 
 ### **Real-World Applications**
 
-**🏛️ Municipal Use Cases:**
-- **Inspection Prioritization**: Focus limited resources on highest-risk properties
-- **Budget Planning**: Allocate enforcement resources based on risk density
-- **Public Safety**: Identify dangerous structures before incidents occur
 
 **💰 Investment Intelligence:**
 - **Distressed Properties**: Find renovation opportunities with quantified risk
@@ -205,6 +195,10 @@ property_risk_score = (
 - **Underwriting**: Enhanced property risk assessment
 - **Claims Prediction**: Identify high-risk areas proactively
 
+**🏛️ Municipal Use Cases:**
+- **Inspection Prioritization**: Focus limited resources on highest-risk properties
+- **Budget Planning**: Allocate enforcement resources based on risk density
+- **Public Safety**: Identify dangerous structures before incidents occur
 ---
 
 ## 📊 **Current Dataset Analysis**
@@ -251,33 +245,6 @@ property_risk_score = (
 - **Scalable Architecture**: Easy addition of new cities
 - **Audit Trail**: Complete data lineage preservation
 
----
-
-## 🚀 **Demo & Presentation Ready**
-
-### **🎬 YouTube Demo Script**
-**Perfect for showcasing practical value:**
-
-1. **Opening**: "Let me show you how to identify the most dangerous properties in Pompano Beach..."
-2. **City Filter**: Select Pompano Beach → Watch metrics update in real-time
-3. **Risk Filtering**: Adjust SRI threshold to show only high-risk properties
-4. **Violation Analysis**: "What if we focus only on unsafe structures..." 
-5. **Export Demo**: Download filtered results for further analysis
-6. **Business Impact**: Explain cost savings and risk reduction potential
-
-### **� Professional Visualizations**
-- **Publication-ready charts** with professional color schemes
-- **Interactive dashboard** perfect for screen recording
-- **Real-time updates** that demonstrate system responsiveness
-- **Clean interface** optimized for presentation contexts
-
-### **🎯 Stakeholder Benefits**
-**For Cities:** Optimize inspection resources, improve public safety
-**For Investors:** Quantify property risk, identify opportunities  
-**For Insurance:** Risk-based pricing, proactive claims prevention
-**For Residents:** Informed housing decisions, neighborhood safety awareness
-
----
 
 ## 📦 **Installation & Requirements**
 
