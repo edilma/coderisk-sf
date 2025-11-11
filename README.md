@@ -6,7 +6,7 @@ Transform municipal code violation data into actionable risk intelligence with o
 
 ## 🎯 **Interactive Demo**
 
-### **🎬 [Watch YouTube Demo →](YOUTUBE_LINK_HERE)**
+### **🎬 [Watch YouTube Demo →](https://youtu.be/ARuEhwtL-gg)**
 See the SRI system in action with live filtering and real-time analysis
 
 ### **💻 [Launch Live Dashboard →](streamlit_app/)**
@@ -138,7 +138,7 @@ coderisk-sf/
 ### **1. Environment Setup**
 ```bash
 # Clone and setup
-git clone [repository-url]
+git clone https://github.com/edilma/coderisk-sf
 cd coderisk-sf
 
 # Create virtual environment

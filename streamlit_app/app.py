@@ -13,7 +13,7 @@ sys.path.append(str(parent_dir))
 
 # Page configuration
 st.set_page_config(
-    page_title="Property Risk Assessment Dashboard",
+    page_title="Property Risk Intelligence Platform",
     page_icon="🏠",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -89,8 +89,8 @@ def get_risk_color(category):
 
 def main():
     # App header
-    st.markdown('<h1 class="main-header">Property Risk Assessment Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown("**Interactive analysis of structural risk across multiple cities**")
+    st.markdown('<h1 class="main-header">Property Risk Intelligence Platform</h1>', unsafe_allow_html=True)
+    st.markdown('<h3 style="text-align: center; color: #666; margin-top: -1rem;">using Structural Risk Index (SRI)</h3>', unsafe_allow_html=True)
     
     # Load data
     df = load_sri_data()
@@ -356,7 +356,7 @@ def main():
     
     # Footer
     st.markdown("---")
-    st.markdown("**Property Risk Assessment Dashboard** - Built with Streamlit | Data from Multi-City Code Enforcement Analysis")
+    st.markdown("**Property Risk Intelligence Platform** - Built with Streamlit | Powered by Structural Risk Index (SRI)")
 
 if __name__ == "__main__":
     main()
