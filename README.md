@@ -1,292 +1,197 @@
-# Property Risk Intelligence Platform
+# Structural Risk Index
 
-**Structural Risk Index (SRI) - Advanced Property Safety Assessment System**
+**Finding distressed properties in municipal code violation data.**
 
-Transform municipal code violation data into actionable risk intelligence with our proprietary **Structural Risk Index (SRI)** - a weighted scoring system that identifies high-risk properties across multiple jurisdictions for targeted intervention, investment analysis, and insurance risk assessment.
+A data pipeline that extracts code violations from municipal PDF records across three South Florida cities, scores 1,089 properties with a weighted risk index, and surfaces the results in an interactive dashboard.
 
-## 🎯 **Interactive Demo**
+Built at **LandingAI Financial Hack NYC 2025**.
 
-### **🎬 [Watch YouTube Demo →](https://youtu.be/ARuEhwtL-gg)**
-See the SRI system in action with live filtering and real-time analysis
+[**▶ Watch the demo**](https://youtu.be/ARuEhwtL-gg)
 
-### **💻 [Launch Live Dashboard →](streamlit_app/)**
-Experience the SRI system with real multi-city data
-
-![SRI Dashboard Screenshot](assets/screenshots/dashboard-main.jpg)
-*Interactive SRI Dashboard showing real-time property risk analysis*
+![SRI Dashboard](assets/screenshots/dashboard-main.jpg)
 
 ---
 
-## 🏆 **The Structural Risk Index (SRI)**
+## Why I built it
 
-### **What It Does**
-The SRI assigns risk scores (1-26+ points) to properties based on code violation patterns, enabling:
-- **Investors**: Identify distressed property opportunities
-- **Insurance**: Adjust premiums based on neighborhood risk
-- **Residents**: Make informed housing decisions
-- **Cities**: Prioritize safety inspections 
+I was helping a real estate investor find distressed properties worth approaching — the ones where an owner might be motivated to sell.
 
-### **How It Works**
-**Weighted Risk Scoring:**
-- **Unsafe Structure**: +5 points (critical safety)
-- **40/50-Year Inspection**: +3 points (aging building risk)
-- **Work Without Permit**: +2 points (illegal modifications)
-- **Nuisance/Maintenance**: +1 point (deterioration)
-- **Multiple Violations**: +1 each (pattern recognition)
+That information is public. Cities publish code violations: unsafe structures, work done without permits, failed inspections, maintenance notices. But it's published as PDFs, in a different format for every city, with no way to compare a property in Margate against one in Pompano Beach.
 
-### **SRI Methodology & Formula**
+So the work was already being done by hand, one city at a time, and it didn't scale past a handful of properties.
 
-**Core Algorithm:**
-```
-SRI Score = Base Risk Score + Multiple Violation Bonus
+This pipeline does it in bulk. It parses the violation records, normalizes them across jurisdictions, and ranks every property by a single comparable score — turning a public records search into a prioritized list of leads.
 
-Where:
-• Base Risk Score = Σ(Violation Weight × Violation Count)
-• Multiple Violation Bonus = max(0, Total Violations - 1) × 1
-```
-
-**Risk Weight Categories:**
-| Violation Type | Weight | Risk Rationale |
-|----------------|--------|----------------|
-| **Unsafe Structure** | +5 points | Critical structural integrity issues |
-| **40/50-Year Inspection** | +3 points | Aging building mandatory safety reviews |
-| **Work Without Permit** | +2 points | Unauthorized modifications, code compliance |
-| **Nuisance/Maintenance** | +1 point | Property deterioration indicators |
-| **Multiple Violations** | +1 each | Pattern recognition for recurring issues |
-
-**Risk Classification:**
-- **🔴 High Risk**: SRI ≥ 8 points (Immediate attention required)
-- **🟡 Medium Risk**: SRI 4-7 points (Monitor and plan intervention)  
-- **🟢 Low Risk**: SRI < 4 points (Standard maintenance cycle)
-
-**Validation & Accuracy:**
-- Algorithm trained on 3 South Florida municipalities
-- Covers building safety, structural integrity, and compliance patterns
-- Cross-validated against municipal inspection priorities
-
-### **Real Results**
-**Current Analysis: 1,089 Properties Across 3 Cities**
-- **Pompano Beach**: 23.8% high-risk properties (highest concentration)
-- **Margate**: 5.0% high-risk properties  
-- **Wilton Manor**: 5.0% high-risk properties
-- **Risk Range**: 1-26 points (Average: 3.1)
-
-![SRI Analysis Results](assets/screenshots/sri-results-summary.jpg)
-*Professional SRI analysis dashboard with key findings*
+The same ranking is useful to more than investors: insurers pricing neighborhood risk, and city inspectors deciding where limited inspection budget should go.
 
 ---
 
-## 🚀 **Interactive SRI Dashboard**
+## The extraction problem
 
-### **Real-Time Property Risk Analysis**
-**Launch:** `streamlit run streamlit_app/app.py`
+Every city publishes this data. No two publish it the same way.
 
-**Key Features:**
-- **Dynamic Filtering**: City, risk scores, violation types
-- **Live Visualizations**: Risk distribution, city comparisons
-- **Property Search**: Find specific addresses or risk levels
-- **Export Functionality**: Download filtered results and reports
-- **Professional Interface**: Ready for stakeholder presentations
+| City | Format |
+|---|---|
+| **Margate** | Fixed-width text from a mainframe report generator (`CE305L`) — monospaced columns, no delimiters |
+| **Pompano Beach** | Clean tabular export with labelled columns |
+| **Wilton Manors** | Tabular, with its own column naming |
+| **Boca Raton** | 285-page status-grouped report; violation rows nested under case rows, descriptions inline as free text |
+| **Oakland Park** | 325 pages, same nested structure, different field names |
 
-### **Dashboard Capabilities**
-- **Risk Metrics**: Total properties, high-risk percentages, average scores
-- **Interactive Charts**: Histogram, bar charts, pie charts with real-time updates  
-- **Property Table**: Sortable, color-coded results with violation breakdowns
-- **Export Tools**: CSV downloads with custom filtering applied
+I used **LandingAI's Agentic Document Extraction** to parse them, since the hackathon was built around it.
 
-![Dashboard Features](assets/screenshots/dashboard-features.jpg)
-*Real-time filtering and interactive visualizations*
+Three cities extracted cleanly. Boca Raton and Oakland Park did not: their nested row structure and inline descriptions meant related fields landed in the wrong records, and correcting that needed more parser configuration than the hackathon window allowed.
+
+So the analysis covers three of the five cities collected — the raw source documents for all five are in `input_folder/`.
+
+The two that failed are the more interesting ones. They aren't badly formatted by accident; they're formatted for a person reading a printed report, with visual grouping standing in for structure. That's a different problem from parsing a table, and it's the normal condition of public records rather than the exception.
+
+---
+<table>
+<tr>
+<td width="50%"><img src="assets/screenshots/boca-source.png" alt="Boca Raton source format"></td>
+<td width="50%"><img src="assets/screenshots/pompano-source.png" alt="Pompano Beach source format"></td>
+</tr>
+<tr>
+<td align="center"><em>Boca Raton — cases grouped by status, violations nested, descriptions inline. Extraction failed here.</em></td>
+<td align="center"><em>Pompano Beach — one row per violation, labelled columns. Extracted cleanly.</em></td>
+</tr>
+</table>
+
+## The Structural Risk Index
+
+Each property receives a score based on the type and number of violations against it.
+
+```text
+SRI = Σ(violation weight × count) + multiple-violation bonus
+
+where the bonus = max(0, total violations − 1) × 1
+```
+
+| Violation type | Weight | Rationale |
+|---|---|---|
+| Unsafe structure | +5 | Critical structural integrity issue |
+| 40/50-year inspection | +3 | Mandatory aging-building safety review |
+| Work without permit | +2 | Unauthorized modification, compliance risk |
+| Nuisance / maintenance | +1 | Deterioration indicator |
+| Each additional violation | +1 | Repeat-offender pattern |
+
+**Risk bands:** High ≥ 8 · Medium 4–7 · Low < 4
+
+### On the weights
+
+These weights are assigned by judgment, not learned from data. They reflect how municipalities themselves prioritize violations — an unsafe-structure citation is a more serious signal than a maintenance notice — and the multiple-violation bonus captures the pattern that repeat offenders tend to be genuinely distressed rather than incidentally cited.
+
+They have **not** been calibrated against outcomes. Validating the weights against actual sales, foreclosures, or inspection findings would be the natural next step, and would turn this from a reasonable heuristic into a measured one.
 
 ---
 
-## 📁 **Key Project Components**
+## What the data showed
 
-```
-coderisk-sf/
-│
-├── streamlit_app/               # 🎯 INTERACTIVE SRI DASHBOARD
-│   ├── app.py                   # Main Streamlit application
-│   └── README.md                # Dashboard documentation
-│
-├── src/                         # 🧠 SRI ANALYSIS ENGINE
-│   └── 3_financial_analysis.ipynb  # Complete SRI implementation
-│
-├── clean_data/                  # 📊 PROCESSED DATASETS & RESULTS
-│   ├── structural_risk_index_results.csv      # Complete SRI scores
-│   ├── sri_professional_dashboard.png         # Publication-ready charts
-│   ├── margate_clean.csv        # City violation data
-│   ├── pompano_beach_clean.csv
-│   └── wilton_manor_clean.csv
-│
-├── input_folder/               # 📄 SOURCE DATA (Municipal PDFs)
-├── results_folder/             # 🔄 DATA PIPELINE OUTPUTS  
-├── cleaning/                   # 🧹 CITY-SPECIFIC DATA PROCESSING
-├── requirements.txt            # 📦 DEPENDENCIES
-└── README.md
-```
+**1,089 properties across three cities**
+
+| City | Properties | High risk (8+) | Avg SRI | Max SRI | Risk density |
+|---|---|---|---|---|---|
+| Pompano Beach | 130 | 31 (23.8%) | 5.00 | 26 | 2.91 |
+| Margate | 602 | 30 (5.0%) | 3.15 | 15 | 1.11 |
+| Wilton Manors | 357 | 18 (5.0%) | 2.33 | 25 | 1.59 |
+
+**Pompano Beach has roughly five times the concentration of high-risk properties** as the other two cities — 23.8% against 5.0%. Risk density varies just as sharply, 2.91 against 1.11.
+
+That gap is the most useful output. For someone sourcing leads, it says where to look first. Whether it reflects genuinely worse building stock or simply more aggressive code enforcement is an open question, and one worth answering before drawing conclusions about the properties themselves.
+
+**Violation distribution**
+
+| Category | Share of risk factors |
+|---|---|
+| Building safety inspection | 27.0% |
+| Work without permit | 10.7% |
+| Nuisance / maintenance | 9.6% |
+| Unsafe structure | 7.1% |
+| Other | 45.5% |
+
+![SRI analysis results](assets/screenshots/sri-results-summary.jpg)
 
 ---
 
-## ⚡ **Quick Start - Launch SRI Dashboard**
+## Dashboard
 
-### **1. Environment Setup**
+![Dashboard features](assets/screenshots/dashboard-features.jpg)
+
+- Filter by city, risk score, and violation type
+- Risk distribution histograms and city comparisons
+- Sortable, colour-coded property table with violation breakdowns
+- CSV export honouring the active filters
+
+---
+
+## Running it
+
+**Requirements:** Python 3.8+, a web browser.
+
 ```bash
-# Clone and setup
 git clone https://github.com/edilma/coderisk-sf
 cd coderisk-sf
 
-# Create virtual environment
 python -m venv .venv
 .venv\Scripts\activate          # Windows
-source .venv/bin/activate       # macOS/Linux
+source .venv/bin/activate       # macOS / Linux
 
-# Install dependencies
-pip install streamlit plotly pandas numpy pathlib
+pip install streamlit plotly pandas numpy
 ```
 
-### **2. Launch Interactive Dashboard**
+**Launch the dashboard:**
+
 ```bash
-# Start SRI Dashboard
 streamlit run streamlit_app/app.py
-
-# Opens automatically at: http://localhost:8501
 ```
 
-### **3. Explore SRI Analysis**
-```bash
-# Open complete SRI analysis notebook  
-jupyter notebook src/3_financial_analysis.ipynb
+Opens at `http://localhost:8501` with all 1,089 scored properties loaded.
 
-# Contains: Data loading, SRI calculation, professional visualizations
-```
+**Explore the analysis:**
 
-### **📊 What You Get Immediately**
-- **Interactive dashboard** with 1,089 real property risk scores
-- **Professional visualizations** ready for presentations
-- **Exportable results** in CSV format
-- **Complete methodology** in Jupyter notebook
-
----
-
-## 🎯 **SRI Analysis Deep Dive**
-
-### **Risk Scoring Methodology**
-```python
-# Example SRI Calculation
-property_risk_score = (
-    unsafe_structure_violations * 5 +      # Critical safety
-    inspection_40_50_violations * 3 +      # Aging infrastructure  
-    work_without_permit_violations * 2 +   # Illegal modifications
-    nuisance_maintenance_violations * 1 +  # Minor deterioration
-    multiple_violation_bonus               # Pattern recognition
-)
-```
-
-### **Real-World Applications**
-
-
-**💰 Investment Intelligence:**
-- **Distressed Properties**: Find renovation opportunities with quantified risk
-- **Market Analysis**: Understand neighborhood safety trends
-- **Due Diligence**: Risk-adjust property valuations
-
-**�️ Insurance Applications:**
-- **Premium Adjustment**: Risk-based pricing using neighborhood data
-- **Underwriting**: Enhanced property risk assessment
-- **Claims Prediction**: Identify high-risk areas proactively
-
-**🏛️ Municipal Use Cases:**
-- **Inspection Prioritization**: Focus limited resources on highest-risk properties
-- **Budget Planning**: Allocate enforcement resources based on risk density
-- **Public Safety**: Identify dangerous structures before incidents occur
----
-
-## 📊 **Current Dataset Analysis**
-
-### **🏙️ Cities Analyzed**
-| City | Properties | High Risk (8+) | Avg SRI | Max SRI | Risk Density |
-|------|------------|----------------|---------|---------|-------------|
-| **Pompano Beach** | 130 | 31 (23.8%) | 5.00 | 26 | 2.91 |
-| **Margate** | 602 | 30 (5.0%) | 3.15 | 15 | 1.11 |
-| **Wilton Manor** | 357 | 18 (5.0%) | 2.33 | 25 | 1.59 |
-
-### **🎯 Key Findings**
-- **Pompano Beach** shows 5x higher risk concentration than other cities
-- **Risk density** varies dramatically between jurisdictions (2.91 vs 1.11)
-- **Building Safety Inspections** drive 27% of all risk factors
-- **1,089 total properties** analyzed with complete risk profiles
-
-### **� Violation Distribution**
-- **Building Safety Inspection**: 27.0% of risk factors
-- **Work Without Permit**: 10.7% of risk factors  
-- **Nuisance/Maintenance**: 9.6% of risk factors
-- **Unsafe Structure**: 7.1% of risk factors
-- **Other Categories**: 45.5% (opportunity for further analysis)
-
----
-
-## 🛠️ **Technical Implementation**
-
-### **🎯 SRI Algorithm Features**
-- **Weighted Scoring**: Evidence-based risk factor weights
-- **Multi-Violation Detection**: Bonus points for repeat offenders
-- **Standardized Scale**: Consistent 1-26+ point scoring across cities
-- **Real-Time Calculation**: Instant updates with new violation data
-
-### **📊 Dashboard Technology**
-- **Streamlit Framework**: Professional, responsive web interface
-- **Plotly Visualizations**: Interactive charts with hover details
-- **Real-Time Filtering**: Instant updates across all visualizations
-- **Export Capabilities**: CSV downloads with applied filters
-
-### **🔄 Data Pipeline**
-- **Multi-Source Integration**: Handles different city data formats
-- **Quality Assurance**: Automatic data validation and cleansing
-- **Scalable Architecture**: Easy addition of new cities
-- **Audit Trail**: Complete data lineage preservation
-
-
-## 📦 **Installation & Requirements**
-
-### **Core Dependencies**
-```bash
-pip install streamlit plotly pandas numpy pathlib
-```
-
-### **Optional for Full Pipeline**
 ```bash
 pip install jupyter landingai-ade python-dotenv
+jupyter notebook src/3_financial_analysis.ipynb
 ```
 
-### **System Requirements**
-- **Python 3.8+**
-- **4GB RAM** (for processing 1,000+ properties)
-- **Web browser** (for Streamlit dashboard)
-- **Internet connection** (for initial package installation)
+The notebook contains the full pipeline: data loading, SRI calculation, and the visualizations.
 
 ---
 
-## 🏆 **Project Achievements**
+## Project structure
 
-**🎯 LandingAI Financial Hack NYC 2025**
+```text
+coderisk-sf/
+├── streamlit_app/
+│   ├── app.py                              # Dashboard
+│   └── README.md
+├── src/
+│   └── 3_financial_analysis.ipynb          # SRI implementation
+├── clean_data/
+│   ├── structural_risk_index_results.csv   # Scored properties
+│   ├── margate_clean.csv
+│   ├── pompano_beach_clean.csv
+│   └── wilton_manor_clean.csv
+├── input_folder/                           # Source municipal PDFs
+├── results_folder/                         # Pipeline outputs
+├── cleaning/                               # Per-city processing
+└── requirements.txt
+```
 
-### **✅ Completed Features**
-- **Structural Risk Index Algorithm**: Weighted scoring system (1-26+ points)
-- **Interactive Dashboard**: Real-time filtering with professional visualizations
-- **Multi-City Analysis**: 1,089 properties across 3 jurisdictions analyzed
-- **Export Functionality**: CSV downloads with filtered results
-- **Professional Visualizations**: Publication-ready charts and dashboards
+---
 
-### **🎬 Demo-Ready Components**
-- **Streamlit Web App**: Launch with single command
-- **Live Filtering**: Real-time updates perfect for screen recording
-- **Business Value**: Clear ROI demonstration for multiple stakeholders
-- **Professional Interface**: Presentation-quality design
+## Limitations
 
-### **💡 Innovation Highlights**
-- **Proprietary SRI Algorithm**: Novel approach to property risk quantification
-- **Cross-Jurisdictional Analysis**: Unified risk assessment across city boundaries
-- **Actionable Intelligence**: Direct connection between data and business decisions
-- **Scalable Architecture**: Ready for expansion to additional cities
+- **The weights are unvalidated.** They're informed judgment, not fitted to outcome data. See the note above.
+- **Three cities of five.** Boca Raton and Oakland Park were collected but not extracted cleanly in time. Their inclusion would roughly triple the dataset.
+- **One county.** Whether the scoring generalizes beyond Broward County is untested.
+- **Violation records reflect enforcement, not condition.** A city that inspects aggressively produces more violations than one that doesn't, which may explain part of the Pompano Beach gap.
+- **Point-in-time snapshot.** The data isn't refreshed automatically; rerunning the pipeline requires new source PDFs.
+- **Per-city cleaning is bespoke.** Each municipality publishes a different format, so adding a city means writing a new cleaning step.
 
-**Status**: Production-ready SRI system with interactive dashboard
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
